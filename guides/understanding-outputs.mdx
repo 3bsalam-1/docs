@@ -1,0 +1,168 @@
+---
+title: "Understanding BRIEF Conversation Outputs and Sections"
+sidebarTitle: "Outputs"
+description: "Learn what BRIEF extracts from your conversations, how to read each output section, and how to correct, edit, or regenerate results."
+---
+
+After every recording, BRIEF produces a structured set of outputs tailored to the type of conversation you had. Rather than giving you a wall of text to read through, BRIEF surfaces the facts that matter — decisions made, actions assigned, risks flagged — each linked back to the exact moment in the audio where it was said. This guide explains what each output section means and how to get the most from it.
+
+---
+
+## The Two Conversation Experiences
+
+BRIEF produces different output sets depending on whether your conversation is classified as Professional or Generic. You can see — and change — the current classification using the conversation type chip at the top of every output screen.
+
+<Tabs>
+  <Tab title="Professional Conversation">
+    Professional outputs are designed for business meetings: client calls, project reviews, vendor negotiations, team standups, and any conversation where accountability matters.
+
+    <CardGroup cols={2}>
+      <Card title="Summary" icon="file-lines">
+        A concise paragraph summarising what the conversation was about, who was involved, and what was resolved.
+      </Card>
+      <Card title="Key Points" icon="list-check">
+        The most important things said — condensed into scannable bullets.
+      </Card>
+      <Card title="Decisions" icon="gavel">
+        What was decided, who decided it, and when. Each decision links to its timestamp in the audio.
+      </Card>
+      <Card title="Action Items" icon="circle-check">
+        Every commitment to do something, with the assigned owner and deadline. Tap any action item to hear the moment it was agreed.
+      </Card>
+      <Card title="Risks" icon="triangle-exclamation">
+        Concerns, blockers, and uncertainties raised during the conversation — surfaced before they become problems.
+      </Card>
+      <Card title="Requirements" icon="clipboard-list">
+        Specifications, constraints, and conditions mentioned — useful for product, legal, and project work.
+      </Card>
+      <Card title="Commitments" icon="handshake">
+        Promises made by any party in the conversation, separate from formal action items.
+      </Card>
+      <Card title="Follow-ups" icon="arrow-right">
+        Items that need further discussion, a separate meeting, or pending input before they can be resolved.
+      </Card>
+    </CardGroup>
+  </Tab>
+  <Tab title="Generic Conversation">
+    Generic outputs work for any other spoken conversation — brainstorms, interviews, personal calls, voice memos, and informal discussions where you want structured notes without the full professional scaffolding.
+
+    <CardGroup cols={2}>
+      <Card title="Summary" icon="file-lines">
+        A plain-language recap of what was discussed and what came out of the conversation.
+      </Card>
+      <Card title="Key Points" icon="list-check">
+        The headline ideas and information from the conversation.
+      </Card>
+      <Card title="Questions" icon="circle-question">
+        Open questions raised during the conversation that weren't fully answered — a useful to-do list for follow-up.
+      </Card>
+      <Card title="Action Items" icon="circle-check">
+        Things to do, even if they weren't formally assigned during the conversation.
+      </Card>
+      <Card title="Important Moments" icon="star">
+        Moments you manually highlighted during recording, plus other passages BRIEF identified as significant.
+      </Card>
+    </CardGroup>
+  </Tab>
+</Tabs>
+
+---
+
+## The Conversation Type Chip
+
+Every output screen shows a small labelled chip near the top — for example **Professional** or **Generic**. This is BRIEF's classification of your conversation.
+
+If BRIEF got it wrong — say it classified a vendor negotiation as Generic — you can fix it in seconds:
+
+<Steps>
+  <Step title="Tap the type chip">
+    The chip is tappable. Tap it to open the type selector.
+  </Step>
+  <Step title="Choose the correct type">
+    Select Professional or Generic (and the relevant sub-type, if applicable).
+  </Step>
+  <Step title="Tap Regenerate">
+    BRIEF re-runs the extraction layer against your stored transcript. This is fast — there's no re-transcription. Only the structured outputs are rebuilt.
+  </Step>
+</Steps>
+
+<Note>
+  Regeneration does not reprocess your audio. It re-runs the extraction and summarisation step against the transcript that's already been saved. You won't lose any edits you made to the transcript itself.
+</Note>
+
+---
+
+## Speaker Names
+
+BRIEF labels speakers as **Speaker 1**, **Speaker 2**, and so on. For many conversations, BRIEF's language model infers probable names from context — mentions in the conversation, calendar data, or your contact history — and suggests them automatically.
+
+To confirm or correct a speaker name:
+
+<Steps>
+  <Step title="Tap a speaker label">
+    Tap any instance of "Speaker 1" (or the suggested name) anywhere in the output.
+  </Step>
+  <Step title="Type the correct name">
+    Enter the name as you'd like it to appear.
+  </Step>
+  <Step title="Confirm">
+    Tap confirm. BRIEF updates every mention of that speaker across the entire output — summary, decisions, action items, transcript — retroactively.
+  </Step>
+</Steps>
+
+<Tip>
+  Correct speaker names before sharing. A محضر that reads "Ahmed agreed to send the proposal by Thursday" is far more useful — and more professional — than one that reads "Speaker 2 agreed to send the proposal by Thursday."
+</Tip>
+
+---
+
+## Provenance: Tapping Back to the Source
+
+Every extracted fact in a Professional output — every decision, action item, requirement, commitment, and risk — is linked to the moment in the recording where it was said.
+
+Tap any item to jump to that timestamp in the audio. Use this to:
+
+- Verify that BRIEF captured the exact wording of a commitment
+- Hear the tone or context around a decision
+- Resolve a disagreement about what was actually agreed
+
+This link between output and audio is called **provenance**. It's what separates BRIEF's outputs from notes — every fact is traceable.
+
+---
+
+## Editing Outputs
+
+All output fields are editable. BRIEF's extraction is a starting point, not a final document.
+
+<Accordion title="Adding an item">
+  Tap the **+** icon at the bottom of any section to add a new bullet, action item, or decision manually.
+</Accordion>
+
+<Accordion title="Editing an existing item">
+  Tap any extracted item to enter edit mode. Change the text, reassign the owner, update the deadline, or reword the summary.
+</Accordion>
+
+<Accordion title="Removing an item">
+  Swipe left on any item, or enter edit mode and tap delete. Removed items don't affect the transcript or audio.
+</Accordion>
+
+<Note>
+  Manual edits are preserved if you regenerate the output — BRIEF merges your edits with the new extraction rather than overwriting them. Review the merged result after regeneration to make sure everything looks right.
+</Note>
+
+---
+
+## Bilingual Output
+
+BRIEF generates outputs in two languages by default:
+
+- **Arabic محضر** — a formal Arabic summary of the conversation, structured as a professional record (محضر اجتماع). Suitable for sharing with Arabic-speaking clients and colleagues as-is.
+- **English action items** — extracted actions, owners, and deadlines in English, useful for tools and workflows that expect English input.
+
+The balance between Arabic and English in the output adapts to your conversation. A fully Arabic meeting produces a fully Arabic محضر. A code-switched meeting produces a محضر that reflects that mix naturally.
+
+You can adjust the default language preference in **Settings → Output Language**.
+
+<Tip>
+  The محضر is designed to be sent to clients or colleagues as-is, without editing. The formatting, register, and structure match the conventions of a formal Arabic meeting record. Many BRIEF users send the محضر directly from the output screen before they've left the meeting room — that's the intended workflow, not a shortcut.
+</Tip>

@@ -1,0 +1,135 @@
+---
+title: "Arabic Dialects, Code-Switching & Transcription in BRIEF"
+sidebarTitle: "Arabic Support"
+description: "Understand which Arabic dialects BRIEF supports, how code-switching works, and how to get the most accurate results from Arabic recordings."
+---
+
+BRIEF is built for the way Arabic-speaking professionals actually talk — mixing dialects, switching to English mid-sentence, and using domain-specific terminology without thinking twice about it. You don't need to change how you speak for BRIEF to understand you.
+
+<Tip>
+  BRIEF's code-switch support means you don't need to think about language during your meeting. Just speak the way you normally do — BRIEF handles the mix accurately without any configuration.
+</Tip>
+
+---
+
+## Supported Dialects & Varieties
+
+<CardGroup cols={2}>
+  <Card title="Egyptian Arabic (Masri)" icon="star">
+    Fully optimized. BRIEF is trained on extensive Egyptian Arabic data and handles the full range of Cairene and regional Egyptian speech patterns, including fast conversational speech.
+  </Card>
+  <Card title="Gulf Arabic" icon="star">
+    Fully optimized. BRIEF supports Najdi, Hijazi, and Khaleeji varieties, with strong performance across Saudi Arabia, UAE, Kuwait, Qatar, Bahrain, and Oman.
+  </Card>
+  <Card title="Modern Standard Arabic (MSA / فصحى)" icon="check">
+    Well-supported. Formal Arabic used in presentations, official meetings, and written-style speech is accurately recognized. BRIEF handles MSA alongside dialect in the same conversation.
+  </Card>
+  <Card title="Levantine Arabic" icon="check">
+    Good support. Lebanese, Syrian, Jordanian, and Palestinian dialects are recognized with good accuracy. If you primarily record in Levantine Arabic, Mode C (cloud) will give you the best results.
+  </Card>
+</CardGroup>
+
+<Note>
+  **Maghrebi dialects** — Moroccan Darija, Algerian Arabic, and Tunisian Arabic — have lower accuracy in the current version of BRIEF. If your recordings are primarily in a Maghrebi dialect, use **Mode C (cloud processing)** to get the best available results. Improved Maghrebi support is on the roadmap.
+</Note>
+
+---
+
+## Code-Switching: Arabic + English
+
+Most professionals in Egypt and the Gulf don't speak pure Arabic or pure English in their meetings — they switch between the two naturally, sometimes mid-sentence or mid-phrase. BRIEF is built to handle this natively.
+
+<Accordion title="How BRIEF handles code-switching">
+  BRIEF's speech recognition model was trained on real code-switched Arabic/English speech — not on Arabic-only or English-only data spliced together. This means it recognizes transitions between languages in real time, without requiring you to declare which language you're speaking or pause between switches.
+
+  Examples of speech BRIEF handles accurately:
+
+  - **"الـ deadline بكرة، لازم نخلص الـ draft النهارده"**
+  - **"Okay, الـ action item هنا هو إننا نـreview الـ proposal"**
+  - **"القرار كان clear — نـproceed بالـ phase التانية"**
+
+  The output reflects the language mix in the transcript and uses formal written Arabic in the structured sections (محضر, ملخص).
+</Accordion>
+
+---
+
+## Output Language
+
+BRIEF generates structured outputs in both Arabic and English. Here's how the language split works:
+
+<Tabs>
+  <Tab title="Arabic Outputs">
+    The Arabic محضر (minutes) and ملخص (summary) use formal written Arabic (MSA) suitable for professional documents — even if the conversation was entirely in dialect. This means your outputs are ready to share or file without additional editing.
+
+    Speaker names, technical terms used in English during the meeting, and proper nouns may appear in English within the Arabic output. This reflects how they were used in the conversation.
+  </Tab>
+  <Tab title="English Outputs">
+    Action items, decisions, and summaries can also be generated in English. If your meeting was conducted in Arabic, BRIEF translates the key outputs — it does not just transcribe the English portions.
+
+    English outputs use clear, professional language and do not carry over Arabic transliterations unless the term has no standard English equivalent.
+  </Tab>
+  <Tab title="Language Settings">
+    Go to **Settings → Output Language** to set your preferred language balance. You can choose:
+
+    - **Arabic primary** — Arabic محضر and summary; English action items
+    - **English primary** — English summary and action items; Arabic محضر
+    - **Bilingual** — full outputs in both languages
+
+    You can also override the language setting for individual conversations from the output screen.
+  </Tab>
+</Tabs>
+
+---
+
+## Technical Terminology
+
+Domain-specific vocabulary — engineering specs, medical terminology, legal terms, financial instruments — is often used in English even in predominantly Arabic conversations. BRIEF handles this correctly:
+
+- If your team says **"الـ KPIs"** or **"نحتاج إجراء CT scan"**, BRIEF transcribes those terms in English as spoken.
+- Legal and financial terms that have established Arabic translations may appear in Arabic (e.g., **عقد**, **ميزانية**) depending on how they were spoken.
+- If a technical term is transcribed incorrectly, edit it directly in the output — BRIEF will use your correction throughout the structured sections.
+
+---
+
+## Tips for Best Arabic Accuracy
+
+<Steps>
+  <Step title="Speak naturally in your dialect">
+    Don't try to speak MSA if that's not how you normally communicate. BRIEF is optimized for Egyptian and Gulf dialects — artificial formal speech may actually reduce accuracy compared to your natural register.
+  </Step>
+  <Step title="Don't suppress code-switching">
+    If you normally switch to English for certain terms or phrases, keep doing so. BRIEF handles code-switching natively and produces more accurate results when you speak naturally.
+  </Step>
+  <Step title="Minimize background noise">
+    Background noise affects Arabic recognition more than English — Arabic phonemes rely on fine acoustic distinctions that are harder to recover in noisy conditions. See the [Audio Quality guide](/support/audio-quality) for setup tips.
+  </Step>
+  <Step title="Use Mode C for long technical conversations">
+    For recordings with dense technical terminology, multiple speakers, or significant dialect mixing, Mode C (cloud processing) gives the most accurate results. On-device Mode A is optimized for speed; cloud processing applies the most capable models.
+  </Step>
+</Steps>
+
+---
+
+## Common Transcription Issues & Fixes
+
+<AccordionGroup>
+  <Accordion title="A person's name or place name is transcribed incorrectly">
+    Proper nouns — especially names that are uncommon or spelled in non-standard ways — are sometimes transcribed phonetically or incorrectly. Edit the transcript directly by tapping the relevant section. BRIEF applies your correction throughout the output automatically.
+  </Accordion>
+
+  <Accordion title="Numbers spoken in Arabic appear as digits in the transcript">
+    This is correct behavior. BRIEF normalizes spoken numbers (e.g., **"خمسة وعشرين"**) to their digit form (**25**) in the transcript, which is standard practice for professional documents. If you need the written-out form, edit the transcript after processing.
+  </Accordion>
+
+  <Accordion title="English phrases within an Arabic sentence have incorrect spacing or formatting">
+    Mixed-direction text (Arabic RTL + English LTR) can occasionally produce spacing artifacts in the output display. Tap the transcript section to edit and correct the spacing. This is a display issue and does not affect the content of your outputs.
+  </Accordion>
+
+  <Accordion title="An Arabic word was transcribed in English letters (transliteration)">
+    This can happen with very informal or colloquial terms that appear in written Arabic predominantly in transliterated form (e.g., "Yalla", "Inshallah"). Edit the transcript to use the Arabic script form if you prefer. You can also report the term through **Settings → Feedback** to help improve future versions.
+  </Accordion>
+
+  <Accordion title="Maghrebi dialect words are transcribed as gibberish or skipped">
+    Maghrebi Arabic phonology differs significantly from Egyptian and Gulf Arabic, and BRIEF's current models have lower accuracy for these dialects. Use **Mode C (cloud)** for the best available results. Very fast or heavily accented Maghrebi speech may still have gaps — editing the transcript is the recommended workaround until dedicated Maghrebi support is released.
+  </Accordion>
+</AccordionGroup>

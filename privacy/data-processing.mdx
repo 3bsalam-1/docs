@@ -1,0 +1,120 @@
+---
+title: "BRIEF Data Processing: Modes, Storage, and Retention"
+sidebarTitle: "Data Processing"
+description: "Understand BRIEF's three processing modes, what each one transmits, how audio retention works, and BRIEF's no-training-by-default commitment."
+---
+
+BRIEF gives you direct control over how your conversations are processed — not through a single on/off privacy toggle, but through a structured choice of processing modes that determines exactly what leaves your device, who handles it, and where it is stored. Every conversation's mode is shown in the Privacy Center alongside a full account of what was transmitted and where it went.
+
+---
+
+## Two Things 'Offline' Means
+
+Before exploring the processing modes, it helps to understand a distinction BRIEF makes explicit:
+
+<CardGroup cols={2}>
+  <Card title="Offline Capture" icon="wifi-slash">
+    BRIEF records reliably with no internet connection. This is unconditional — it works at every processing tier, on every supported device, always. Losing your connection mid-meeting does not interrupt or corrupt the recording.
+  </Card>
+  <Card title="On-Device Processing" icon="microchip">
+    AI transcription and analysis runs locally on your phone, with no data transmitted. This is available in Mode A and Mode B, but it is a separate capability from offline capture.
+  </Card>
+</CardGroup>
+
+<Note>
+  These two features are independent. A recording captured offline can still be processed in the cloud later — but only if you are using Mode C and only when a connection is available. Offline capture does not commit you to on-device processing.
+</Note>
+
+---
+
+## Processing Modes
+
+<Tabs>
+  <Tab title="Mode A — On This Phone Only">
+    **Audio never leaves your device.**
+
+    Transcription, speaker identification, and output generation all run locally using on-device AI. Nothing is transmitted to BRIEF's servers or to any third-party provider for processing.
+
+    - ✅ Maximum privacy — no external data exposure
+    - ✅ Works with no internet connection, always
+    - ✅ No sub-processors involved
+    - ℹ️ Processing speed and model capability are determined by your device hardware
+
+    Mode A is the right choice when the content of the conversation is highly sensitive, when you are operating in an environment with network restrictions, or when you simply want the strongest possible data containment.
+  </Tab>
+  <Tab title="Mode B — Hybrid">
+    **Audio stays on your device. Only derived text can leave.**
+
+    The audio file is never transmitted. Transcription runs on-device. If you explicitly enable specific cloud-powered features (such as advanced summarisation or cross-conversation search), only the derived text — not the audio — is sent to cloud services for those features.
+
+    - ✅ Audio never leaves your device
+    - ✅ You control which text-based features send data to the cloud
+    - ✅ Works offline for capture and base transcription
+    - ℹ️ Cloud features require an active connection when used
+
+    Mode B is appropriate when you want on-device audio containment but are comfortable with derived text being processed externally for specific, opted-in features.
+  </Tab>
+  <Tab title="Mode C — Cloud Enhanced">
+    **Audio is sent to BRIEF's processing providers.**
+
+    Your audio is transmitted to BRIEF's cloud processing partners for transcription and AI analysis. BRIEF operates under **zero-retention terms** with all cloud providers: audio is processed and then permanently deleted. It is not retained, stored, or used for any purpose after processing completes.
+
+    - ✅ Highest transcription accuracy and AI output quality
+    - ✅ All processing providers named in BRIEF's sub-processor list
+    - ✅ Audio deleted from providers after processing — zero retention
+    - ℹ️ Requires an internet connection for processing (captured offline, processed when connected)
+
+    Mode C is appropriate when accuracy is the priority and you are satisfied with BRIEF's zero-retention provider terms. The Privacy Center shows which provider processed each conversation and in which country.
+  </Tab>
+</Tabs>
+
+---
+
+## Sub-Processor Transparency
+
+BRIEF publishes a complete sub-processor list that names every provider involved in data handling, the category of data they process, the features they support, and the country where processing occurs.
+
+You can view the sub-processor list directly from the Privacy Center. The list is versioned — the Privacy Center shows which version was in effect for each conversation, so the record remains accurate even when the list is updated.
+
+Cross-border transfers are listed explicitly, with the legal mechanism applied (for example, Standard Contractual Clauses or an adequacy decision).
+
+---
+
+## Audio Retention
+
+<Warning>
+  Audio retention in BRIEF is **opt-in to extend, not opt-in to delete.** Audio has a default time-to-live (TTL). When that TTL expires, the audio is deleted automatically. You extend retention deliberately — it is never extended because you took no action.
+</Warning>
+
+| Data type | Default retention | Configurable |
+|---|---|---|
+| Audio file | Short TTL (see Privacy Center for current default) | Yes — extend or shorten per conversation or globally |
+| Transcript | Longer default than audio | Yes |
+| AI outputs (notes, summaries, action items) | Longer default than audio | Yes |
+
+Set your retention defaults in **Privacy Center → Set retention defaults**. Changes apply to new conversations. To update an existing conversation's retention schedule, open it in the Privacy Center and adjust there.
+
+---
+
+## No Training on Your Conversations
+
+<Warning>
+  BRIEF does not use your conversations — audio, transcripts, or outputs — to train or improve AI models. This is the default for every account, and it is not contingent on a plan tier or a setting you need to find.
+</Warning>
+
+An opt-in corrections program exists as a separate feature. If you choose to enrol:
+
+- Enrolment requires a separate, explicit consent action — it is never bundled with account creation or service terms.
+- You can revoke consent for any individual item, not just the programme as a whole.
+- Sensitive data categories are excluded from the programme entirely.
+- Opting in is never a condition of accessing any part of BRIEF.
+
+---
+
+## On-Device Storage
+
+Data stored on your device — audio files, transcripts, and AI outputs — is held in encrypted local storage. The encryption key is tied to your device and account credentials.
+
+<Warning>
+  On-device processing (Mode A) reduces your data's exposure significantly by keeping everything local. However, it does not mean the data is legally exempt from privacy law — it is still personal data, and data subject rights apply to it. The Privacy Center shows what is stored on your device for every Mode A conversation, just as it does for Mode B and Mode C.
+</Warning>

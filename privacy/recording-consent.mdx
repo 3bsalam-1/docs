@@ -1,0 +1,119 @@
+---
+title: "Recording Consent: BRIEF Disclosure Options Explained"
+sidebarTitle: "Recording Consent"
+description: "Learn how BRIEF's consent-first recording model works — disclosure options, the consent record, blocking prompts, and what BRIEF will never do."
+---
+
+Every recording in BRIEF starts with you — visibly, intentionally, in that session. There is no mode in which BRIEF records without you actively starting it. This is not a policy choice that could be rolled back; it is the architecture. The moment recording is active, it is shown on screen, the operating system's recording indicator is always present, and the consent record for that session begins.
+
+## The Recording Setup Screen
+
+When you tap **Record**, the recording setup screen appears before any audio is captured. This screen is not a formality — it is where you configure how the recording will work and what disclosure you will make to any other participants.
+
+<Steps>
+  <Step title="Review your processing mode">
+    The screen shows your current default processing mode (A, B, or C). You can change it for this recording. The mode you set here is locked for the duration of the conversation and recorded in the consent log. See [Data Processing](/privacy/data-processing) for what each mode means.
+  </Step>
+  <Step title="Choose your disclosure action">
+    Select how you will inform any participants that recording is taking place. The right option depends on your situation — see the options below.
+  </Step>
+  <Step title="Start recording">
+    Tap **Start**. Recording begins. The on-screen indicator and OS recording indicator are both active from this point. The consent record is created with a timestamp.
+  </Step>
+</Steps>
+
+<Note>
+  If you have recorded before, the setup screen is pre-filled with your settings from the previous session. Review them before starting — the situation may be different this time.
+</Note>
+
+---
+
+## Disclosure Options
+
+<Tabs>
+  <Tab title="None">
+    **When to use:** You are recording yourself alone — a personal note, a voice memo, or a solo debrief with no other participants present.
+
+    No disclosure action is taken. The recording proceeds with the standard on-screen and OS indicators visible to you.
+
+    <Warning>
+      If there is any possibility that a third party could be recorded — in person or on a call — select one of the options below. Recording someone without their knowledge may be unlawful in your jurisdiction.
+    </Warning>
+  </Tab>
+  <Tab title="On-Screen Notice">
+    **When to use:** You are in a meeting or call and participants can see your screen. The BRIEF recording indicator is prominently displayed on screen throughout the session, visible to anyone looking at your device.
+
+    This option is appropriate for face-to-face conversations where the other party is close enough to read your screen, or for video calls where your screen may be visible.
+  </Tab>
+  <Tab title="Spoken Announcement">
+    **When to use:** You want to verbally inform participants before recording begins. BRIEF prompts you with suggested language to announce the recording out loud. The prompt appears before audio capture starts.
+
+    The fact that a spoken announcement was prompted is logged in the consent record. What was actually said is your responsibility to deliver accurately.
+  </Tab>
+  <Tab title="Show to Room">
+    **When to use:** You are in a group setting, a meeting room, or any situation where a verbal announcement might be awkward or easy to miss.
+
+    BRIEF displays a full-screen notice — large, clear text in both **Arabic and English** — that you turn your phone to face the room. The screen states plainly that recording is in progress. Many people find this is a natural and unambiguous way to open a recorded session.
+
+    The show-to-room screen remains available throughout the recording for anyone who enters the room later.
+  </Tab>
+</Tabs>
+
+---
+
+## When BRIEF Blocks Recording
+
+If you indicate during setup that a third party is present but has not been informed of the recording, BRIEF shows a **blocking prompt**. Recording does not start until you acknowledge the prompt and either change your disclosure selection or confirm that consent has been obtained by another means.
+
+This is intentional behaviour, not a bug. BRIEF will not record a third party who has not been made aware of the recording.
+
+<Warning>
+  The blocking prompt cannot be bypassed by dismissing it. You must either select a disclosure option or cancel the recording. This is a deliberate design constraint — not a usability gap.
+</Warning>
+
+---
+
+## The Consent Record
+
+Every conversation stores a consent record automatically. You do not need to create it manually.
+
+<CardGroup cols={2}>
+  <Card title="What was disclosed" icon="megaphone">
+    The disclosure option you selected (none, on-screen, spoken, or show-to-room) is recorded for every session.
+  </Card>
+  <Card title="When it happened" icon="clock">
+    The timestamp of when recording started and when the disclosure action was taken or prompted.
+  </Card>
+  <Card title="Which policy applied" icon="file-shield">
+    The version of BRIEF's privacy policy and recording policy that was in effect at the time of recording.
+  </Card>
+  <Card title="Processing mode" icon="microchip">
+    The mode (A, B, or C) that was active — so the consent record reflects exactly what was disclosed about how the data would be handled.
+  </Card>
+</CardGroup>
+
+<Note>
+  The consent record is not just for compliance purposes. It is your proof of what happened and when. If you ever need to demonstrate that participants were aware of the recording — in a professional, legal, or regulatory context — the consent record is there, timestamped and tied to the specific conversation.
+</Note>
+
+---
+
+## What BRIEF Will Never Build
+
+Some capabilities are excluded from BRIEF's product permanently. These are not features that are "off by default" — they will not be built.
+
+<Accordion title="Stealth or discreet recording modes">
+  BRIEF will never offer a mode that hides or minimises the recording indicator from the device user. Every recording is visible. Every recording is intentional.
+</Accordion>
+
+<Accordion title="Always-on ambient capture">
+  BRIEF does not run continuous background audio capture. Recording begins when you start it and ends when you stop it. There is no persistent listening state.
+</Accordion>
+
+<Accordion title="Automatic recording from calendar or location triggers">
+  BRIEF will not automatically start recording because a calendar event has begun, because you have arrived at a location, or because any other background signal has fired. You start every recording.
+</Accordion>
+
+<Accordion title="Suppression of OS recording indicators">
+  The operating system's recording indicator (the microphone dot or status bar icon) is always shown while BRIEF is recording. BRIEF will never attempt to suppress it.
+</Accordion>

@@ -1,0 +1,176 @@
+---
+title: "How BRIEF Works: The Conversation Intelligence Pipeline"
+sidebarTitle: "How It Works"
+description: "A conceptual walkthrough of BRIEF's five layers: capture, understanding, output, memory, and the trust foundation that spans all of them."
+---
+
+BRIEF is not a transcription app with a summary feature bolted on. It is a purpose-built pipeline — five layers that each do a specific job, designed to work together so that a spoken conversation becomes a structured, searchable, trustworthy memory. This page explains what happens at each layer and why it was designed that way.
+
+---
+
+## Layer 1: Capture
+
+Every BRIEF session starts with a single tap. There is no setup wizard, no template to choose, and no agenda to fill in before you start. The goal is to make capturing a conversation as frictionless as possible, because the value of BRIEF depends entirely on you actually recording.
+
+**What happens when you record:**
+
+- **One-tap record** — The recording setup screen is pre-filled with your last-used settings. Tap once more to start.
+- **Fully offline** — BRIEF records with no internet connection. Audio is written directly to local storage. You can record in a basement, on a plane, or in a building with no signal.
+- **Foreground-only, always visible** — The recording indicator is always on-screen while a session is active. BRIEF never records in the background without your knowledge. This is a design constraint, not a technical limitation — consent-first recording is non-negotiable.
+- **Long sessions supported** — BRIEF handles sessions up to three hours without performance degradation.
+- **Chunked storage** — Audio is written in small chunks continuously. If your phone runs out of battery or the app is interrupted, nothing already captured is lost. Recovery is automatic when you reopen the app.
+- **Bookmark in real time** — Tap the ★ star icon at any point during recording to flag a moment. BRIEF stores that timestamp and surfaces it prominently in the output.
+
+---
+
+## Layer 2: Understanding
+
+Once you tap Stop, BRIEF begins the understanding pipeline. This is where raw audio becomes structured language data.
+
+<Steps>
+
+  <Step title="Speech Recognition">
+    BRIEF transcribes audio in **Arabic, English, or both in the same utterance**. This is not a generic multilingual model applied to Arabic — BRIEF is tuned specifically for:
+
+    - **Egyptian Arabic** (عربي مصري) — the most widely spoken Arabic dialect
+    - **Gulf Arabic** (خليجي) — covering Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, and Oman
+    - **Code-switched Arabic/English** — the hybrid register that professionals in the MENA region actually use in meetings, not formal Modern Standard Arabic
+
+    The result is a timestamped, speaker-attributed transcript that reflects how the conversation actually sounded.
+  </Step>
+
+  <Step title="Speaker Diarization">
+    BRIEF segments the transcript by speaker — identifying who spoke when, even when speakers overlap or interrupt each other. Each speaker is assigned a label (**Speaker 1**, **Speaker 2**, etc.).
+
+    BRIEF also uses the transcript content to **infer likely speaker names** using an LLM. If participants address each other by name during the conversation, BRIEF surfaces those as suggestions. You confirm or correct them with a single tap, and the name propagates everywhere in the output and archive.
+  </Step>
+
+  <Step title="Conversation Classification">
+    BRIEF reads the transcript and automatically classifies the conversation as either **Professional** or **Generic**. This is not a mode you choose before recording — it is an inference made after the fact, based on the content.
+
+    The classification appears as an **editable chip** on your output screen. If BRIEF gets it wrong, tap the chip to switch types. The structured extraction reruns immediately against the correct template.
+  </Step>
+
+</Steps>
+
+---
+
+## Layer 3: Output
+
+The understanding layer produces a transcript and a classification. The output layer turns those into structured, actionable results — different depending on conversation type.
+
+<Tabs>
+  <Tab title="Professional Conversation">
+    Professional conversations are structured business interactions: client meetings, project kick-offs, negotiations, stand-ups, vendor calls, and performance reviews. BRIEF extracts:
+
+    <Accordion title="Summary & Key Points">
+      A concise prose summary of the conversation, followed by a bulleted list of the most important statements made. Both are available in Arabic and English.
+    </Accordion>
+
+    <Accordion title="Decisions">
+      Explicit decisions that were made or agreed upon during the conversation, attributed to the speaker who made them where possible.
+    </Accordion>
+
+    <Accordion title="Action Items">
+      Tasks that need to be done after the meeting. Each action item includes:
+      - The task description
+      - The **owner** (inferred from who accepted or was assigned the task)
+      - The **deadline** (inferred from any date or timeframe mentioned)
+    </Accordion>
+
+    <Accordion title="Risks">
+      Issues, concerns, blockers, or uncertainties that were raised during the conversation — even if no resolution was reached.
+    </Accordion>
+
+    <Accordion title="Requirements">
+      Specifications, constraints, or criteria that were stated or implied — particularly useful for technical, product, or consulting conversations.
+    </Accordion>
+
+    <Accordion title="Commitments">
+      Promises made by any participant: deliverables pledged, timelines committed to, outcomes guaranteed.
+    </Accordion>
+
+    <Accordion title="Follow-ups">
+      Items that require attention after the meeting but don't yet have a clear owner or deadline — open loops to close.
+    </Accordion>
+  </Tab>
+
+  <Tab title="Generic Conversation">
+    Generic conversations are open-ended discussions, brainstorms, research interviews, or any interaction that doesn't follow a structured business agenda. BRIEF extracts:
+
+    <Accordion title="Summary & Key Points">
+      A concise prose summary of the conversation and a list of the most significant statements or themes.
+    </Accordion>
+
+    <Accordion title="Questions">
+      Open questions that were raised during the conversation — whether answered or not.
+    </Accordion>
+
+    <Accordion title="Action Items">
+      Tasks or next steps that emerged, even informally.
+    </Accordion>
+
+    <Accordion title="Important Moments">
+      Moments you bookmarked during recording (★), plus additional moments BRIEF identifies as significant based on content — topic shifts, strong statements, key revelations.
+    </Accordion>
+  </Tab>
+</Tabs>
+
+**Bilingual outputs** — Every output is available in both Arabic (محضر) and English. Use the language toggle on the output screen to switch. Sharing and export preserve the language you choose.
+
+---
+
+## Layer 4: Memory
+
+A single processed conversation is useful. A searchable, linked archive of hundreds of conversations is a professional memory system.
+
+**How the Conversation Archive works:**
+
+- **Automatic saving** — Every processed conversation is stored in the archive immediately, with no manual step required.
+- **Full-text search** — Search across conversation titles, transcripts, and extracted fields (decisions, action items, requirements, etc.) in one query.
+- **Provenance linking** — This is BRIEF's most important memory feature. Every extracted fact — every decision, action item, commitment, or risk — is linked back to the **exact timestamp** in the original transcript where it was spoken. Tap the link to jump directly to that moment.
+
+<Note>
+  Provenance linking means you can always answer the question "Where did that come from?" You are never left trusting a summary you can't verify. Every extracted item is one tap away from its source.
+</Note>
+
+---
+
+## Layer 5: Trust
+
+Trust is not a feature — it is the foundation every other layer is built on. BRIEF's trust architecture has three components.
+
+**Consent-first recording** — BRIEF will not record without your explicit action. The recording indicator is always visible. There is no background recording, no silent recording, and no scheduled recording. This is enforced by design.
+
+**Three processing modes** — Before every session, you choose how your audio is handled:
+
+| Mode | Audio handling | Requires internet? | Best for |
+|------|---------------|-------------------|----------|
+| **A — On-Device** | Audio never leaves your phone | No | Maximum privacy |
+| **B — Hybrid** | Audio stays local; optional text processing in cloud | Optional | Balance |
+| **C — Cloud-Enhanced** | Audio sent to cloud, processed, then deleted | Yes | Best accuracy |
+
+**Privacy Center** — A dedicated in-app section where you can review what data BRIEF holds, how it is used, and how to delete any conversation or your entire account.
+
+<Warning>
+  Cloud-enhanced processing (Mode C) requires an active internet connection and an account. Audio is transmitted over an encrypted connection and deleted from BRIEF's servers immediately after transcription is complete. BRIEF does not retain audio for training or any other purpose.
+</Warning>
+
+---
+
+## The Full Picture
+
+<CardGroup cols={2}>
+  <Card title="Conversation Intelligence" icon="brain" href="/concepts/conversation-intelligence">
+    Understand how BRIEF classifies conversations and extracts structured outputs.
+  </Card>
+  <Card title="AI Memory & Archive" icon="box-archive" href="/concepts/ai-memory">
+    Learn how the Conversation Archive stores conversations and how provenance linking works.
+  </Card>
+  <Card title="Processing Modes" icon="sliders" href="/concepts/processing-modes">
+    Deep-dive on Mode A, B, and C — trade-offs, use cases, and how to switch.
+  </Card>
+  <Card title="Privacy & Consent" icon="shield-halved" href="/concepts/privacy-consent">
+    The principles behind consent-first recording and BRIEF's data handling policy.
+  </Card>
+</CardGroup>

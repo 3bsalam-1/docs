@@ -1,0 +1,205 @@
+---
+title: "Managing Your BRIEF Conversation Archive and History"
+sidebarTitle: "Archive"
+description: "Search, filter, tag, and manage your full conversation history in BRIEF — with provenance links, re-generation, and per-conversation privacy controls."
+---
+
+Every conversation you record in BRIEF is automatically saved to your Conversation Archive — a searchable, provenance-linked history that grows with your work. Rather than stacking recordings in a folder, the Archive makes your entire conversation history queryable: search for a decision made three months ago, find every commitment a vendor made across all your calls, or jump back to the exact moment a requirement was agreed. This guide explains how to browse, search, edit, and manage the Archive effectively.
+
+---
+
+## What the Conversation Archive Is
+
+The Archive is your permanent record of every conversation you've recorded in BRIEF. It stores:
+
+- The **audio recording** (where applicable and permitted by your processing mode)
+- The **full transcript** with speaker labels and timestamps
+- All **structured outputs**: summary, key points, decisions, action items, risks, and every other extracted field
+- Any **manual edits** you've made to the output
+- **Tags** and metadata (title, type, participants, duration)
+
+Search in the Archive reaches all of these layers simultaneously. When you search for a name or a phrase, BRIEF looks across titles, transcripts, summaries, and every extracted fact — not just the conversation title.
+
+---
+
+## Browsing Your History
+
+Open the Archive from the bottom navigation bar. Conversations are listed newest-first by default.
+
+Each conversation card shows:
+
+- **Title** (auto-generated or manually set)
+- **Date and time**
+- **Conversation type** (Professional / Generic)
+- **Duration**
+- **Speaker count**
+- **Tags**
+
+Tap any card to open the full output.
+
+---
+
+## Searching the Archive
+
+<Steps>
+  <Step title="Tap the search bar">
+    The search bar sits at the top of the Archive screen. Tap it and type any keyword, name, phrase, or topic.
+  </Step>
+  <Step title="Review the results">
+    Results appear as conversation cards with the matching text highlighted. BRIEF searches across:
+    - Conversation titles
+    - Full transcripts
+    - Summaries
+    - Extracted fields: decisions, action items, requirements, commitments, risks, and follow-ups
+  </Step>
+  <Step title="Open a result">
+    Tap a result card to open the full conversation. The matching passage is highlighted in context.
+  </Step>
+</Steps>
+
+<Tip>
+  Search is particularly powerful for accountability. Type a person's name to see every action item assigned to them across all your conversations. Type a project name to pull up every meeting where it was discussed.
+</Tip>
+
+---
+
+## Filtering the Archive
+
+Use filters to narrow the Archive to exactly what you need.
+
+<CardGroup cols={3}>
+  <Card title="Conversation Type" icon="tag">
+    Filter to show only Professional conversations, only Generic conversations, or both.
+  </Card>
+  <Card title="Date Range" icon="calendar">
+    Restrict results to a specific time window — last week, last month, or a custom range.
+  </Card>
+  <Card title="Tags" icon="hashtag">
+    Filter by any tag to see all conversations in a project, with a client, or on a topic.
+  </Card>
+</CardGroup>
+
+Filters stack — you can filter by type and date range simultaneously. Tap **Clear Filters** to reset.
+
+---
+
+## Opening a Past Conversation
+
+Tap any conversation card to open its full output. Everything you saw immediately after recording is still here: all sections, all speaker labels, all extracted facts.
+
+Inside a past conversation, you can:
+
+<Accordion title="Jump to any moment in the audio">
+  Tap any extracted item — a decision, action item, requirement, or commitment — to jump directly to the timestamp in the recording where it was said. The audio player opens at that exact moment.
+</Accordion>
+
+<Accordion title="Search within the conversation">
+  Use the in-conversation search (the magnifying glass icon) to find a specific word or phrase within this conversation's transcript. Every match is highlighted, and you can step through them in order.
+</Accordion>
+
+<Accordion title="Edit the output">
+  All output fields remain editable in the Archive. Tap any section to edit, add, or remove items — the same way you would immediately after recording. Changes are saved automatically.
+</Accordion>
+
+---
+
+## Tags
+
+BRIEF suggests tags automatically based on the content of each conversation — project names, participant names, topics, and recurring themes. Suggested tags appear as chips when you open a conversation.
+
+To manage tags:
+
+- **Accept a suggestion**: tap the suggested tag to add it
+- **Add a custom tag**: tap **+ Add Tag** and type your own
+- **Remove a tag**: tap the × on any applied tag
+
+Tags you create are remembered and suggested in future conversations.
+
+---
+
+## Editing Past Conversations
+
+You can edit any metadata or output field of a past conversation at any time:
+
+| Field | Editable |
+|-------|----------|
+| Title | ✅ |
+| Tags | ✅ |
+| Conversation type | ✅ |
+| Summary | ✅ |
+| All extracted fields | ✅ |
+| Transcript text | ✅ |
+| Speaker names | ✅ |
+
+Changes save automatically. There is no publish or confirm step.
+
+---
+
+## Re-Generating a Past Conversation
+
+If you want to reprocess a past conversation — because you've changed the conversation type, or because BRIEF has released an updated AI model — tap **Regenerate** from the conversation's options menu.
+
+<Steps>
+  <Step title="Open the conversation">
+    Navigate to the conversation in the Archive and open it.
+  </Step>
+  <Step title="Tap the options menu">
+    Tap the **⋮** menu in the top-right corner.
+  </Step>
+  <Step title="Tap Regenerate">
+    BRIEF re-runs extraction and summarisation against the stored transcript. The audio is not re-processed. This typically completes in under a minute.
+  </Step>
+  <Step title="Review the new output">
+    The regenerated output replaces the previous one. Any manual edits you made are merged in — review the result to confirm everything looks right.
+  </Step>
+</Steps>
+
+---
+
+## Excluding a Conversation from Memory
+
+Some conversations are sensitive. You may want to keep the notes but prevent the conversation from appearing in search results or being included in BRIEF's cross-conversation memory features.
+
+To exclude a conversation:
+
+1. Open the conversation in the Archive
+2. Tap **⋮** → **Privacy Settings**
+3. Toggle **Exclude from searchable archive**
+
+The conversation remains accessible when you navigate directly to it, but it won't appear in search results and won't contribute to cross-conversation memory on the Pro plan.
+
+---
+
+## Memory Limits by Plan
+
+How far back your Archive reaches depends on your plan.
+
+<CardGroup cols={3}>
+  <Card title="Free" icon="circle">
+    **30-day memory**
+
+    Conversations older than 30 days are removed from the Archive. Unlimited on-device recording.
+  </Card>
+  <Card title="Starter" icon="star">
+    **90-day memory**
+
+    Access the last 90 days of conversations. ~10 cloud AI hours per month.
+  </Card>
+  <Card title="Pro" icon="crown">
+    **Full history**
+
+    Every conversation, forever. Plus cross-conversation memory chat — ask questions across your entire history.
+  </Card>
+</CardGroup>
+
+Upgrading your plan extends your memory window retroactively — conversations that fell outside the Free window are restored when you upgrade to Starter or Pro (as long as they haven't been permanently deleted).
+
+---
+
+## Deleting Conversations
+
+To delete a conversation, open it, tap **⋮**, and tap **Delete**.
+
+<Warning>
+  Deleting a conversation from the Archive permanently deletes the audio recording, the full transcript, the structured output, and every extracted fact associated with it. This action cannot be undone. If you want to remove a conversation from search without losing the content, use the **Exclude from searchable archive** toggle instead. For data deletion requests and privacy options, visit the **Privacy Center** in Settings.
+</Warning>

@@ -1,0 +1,119 @@
+---
+title: "BRIEF Privacy Center: Inspect and Control Your Data"
+sidebarTitle: "Privacy Center"
+description: "Use BRIEF's Privacy Center to inspect every conversation's processing details, storage location, and consent record — and take action on your data."
+---
+
+The Privacy Center is BRIEF's dedicated surface for understanding and controlling your data. It is not a buried settings page — it's a first-class part of the product, accessible from any conversation at any time. From here you can see exactly what BRIEF knows about a conversation, what left your device, who processed it, and what you can do about it right now.
+
+## Accessing the Privacy Center
+
+<Steps>
+  <Step title="From a conversation">
+    Tap the **Privacy** icon (shield) in the top-right corner of any conversation screen. You land directly on that conversation's privacy detail view.
+  </Step>
+  <Step title="From your account">
+    Go to **Account → Privacy**. This opens the global Privacy Center, where you can take account-wide actions and review any past conversation.
+  </Step>
+</Steps>
+
+---
+
+## Per-Conversation View
+
+Select any conversation in the Privacy Center to see a complete record of how it was handled. Every field below is shown for every conversation — nothing is hidden.
+
+<CardGroup cols={2}>
+  <Card title="Live Status" icon="circle-dot">
+    A live indicator shows whether this conversation is being recorded right now. There is no background or silent state — if BRIEF is recording, it is shown here.
+  </Card>
+  <Card title="Processing Mode" icon="microchip">
+    Shows which mode was active: **Mode A** (on-device only), **Mode B** (hybrid), or **Mode C** (cloud-enhanced). The mode is locked at the time recording starts and cannot change mid-conversation.
+  </Card>
+  <Card title="Audio Storage Location" icon="hard-drive">
+    Tells you exactly where the audio file lives: **This device**, **Cloud**, or **Both**. If cloud storage applies, the region is shown.
+  </Card>
+  <Card title="What Left Your Device" icon="arrow-up-from-bracket">
+    A plain-language breakdown of which parts of this conversation were transmitted off-device — audio, derived text, metadata — and which stayed local.
+  </Card>
+  <Card title="Provider & Country" icon="globe">
+    If any data was processed by a third-party provider, the provider name and the country where processing occurred are shown. This maps directly to BRIEF's published sub-processor list.
+  </Card>
+  <Card title="Audio Retention" icon="clock">
+    Shows how long the audio file will be kept under your current retention settings and the exact date it is scheduled to be deleted. You can change this here.
+  </Card>
+  <Card title="Consent Record" icon="file-shield">
+    The disclosure that was made before this conversation started, the timestamp it was acknowledged, and the policy version that applied at the time.
+  </Card>
+  <Card title="Product Improvement" icon="flask">
+    Whether any part of this conversation is contributing to product improvement. The default is **No** for every conversation, every account.
+  </Card>
+</CardGroup>
+
+<Tip>
+  You can open the Privacy Center for any past conversation — not just recent ones — to see exactly where its audio went and whether it is still stored anywhere. This record is permanent for as long as the conversation exists.
+</Tip>
+
+---
+
+## Per-Conversation Actions
+
+These actions apply to a single selected conversation. Each is permanent — see [Deleting Your Data](/privacy/deletion-rights) for full deletion semantics before proceeding.
+
+<Accordion title="Delete this conversation">
+  Permanently removes the audio file, transcript, AI-generated outputs, and every extracted fact (decisions, action items, and so on) derived from this conversation — from your device, from cloud storage, and from backups on the published purge schedule. This cannot be undone.
+</Accordion>
+
+<Accordion title="Delete audio only">
+  Removes the audio file (device copy and any cloud copy) and destroys its encryption key, while leaving the transcript and notes intact. Use this when you want to retain the written record but no longer need the recording.
+</Accordion>
+
+<Accordion title="Export this conversation's data">
+  Downloads a structured export of the transcript, AI outputs, and metadata for this conversation. Run this before deleting if you want a local copy.
+</Accordion>
+
+---
+
+## Global Actions
+
+Global actions apply across your entire account. Access them from the main Privacy Center screen (via **Account → Privacy**).
+
+<Tabs>
+  <Tab title="Data Deletion">
+    <Steps>
+      <Step title="Delete all recordings">
+        Deletes every conversation and all associated data across your account. This is permanent. Export anything you need before proceeding.
+      </Step>
+      <Step title="Revoke cloud consent">
+        Stops all future cloud processing immediately. No new data will be sent to cloud providers. Data already processed by cloud providers under zero-retention terms has already been deleted at source — it is not retrievable. Any outputs already returned to your archive remain until you delete them separately.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Data Export">
+    <Steps>
+      <Step title="Export all my data">
+        Generates a full export of your BRIEF data: all transcripts, outputs, metadata, and your consent records. Delivered as a structured download. Processing time depends on the size of your archive.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Defaults & Permissions">
+    <Steps>
+      <Step title="Set retention defaults">
+        Configure how long audio, transcripts, and outputs are kept before automatic deletion. Retention is never extended by inaction — you extend it deliberately. Changes apply to new conversations; existing conversations retain their original schedule unless you update them individually.
+      </Step>
+      <Step title="Manage permissions">
+        Review and update the system permissions BRIEF holds: microphone, calendar access, and notifications. Revoking a permission takes effect immediately.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+---
+
+## Sub-Processor Transparency
+
+If a conversation was processed using Mode B or Mode C, the Privacy Center shows which provider handled it and in which country. This links directly to BRIEF's published sub-processor list, which names every provider, the data they handle, and the legal basis for cross-border transfers.
+
+<Note>
+  The sub-processor list is versioned. The Privacy Center shows which version of the list was in effect when each conversation was processed — so the record is accurate even if the list changes later.
+</Note>

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "BRIEF",
+  "theme": "almond",
+  "colors": {
+    "primary": "#f56505",
+    "light": "#ff8738",
+    "dark": "#f56505"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "how-brief-works"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/conversation-intelligence",
+              "concepts/ai-memory",
+              "concepts/processing-modes",
+              "concepts/privacy-consent"
+            ]
+          },
+          {
+            "group": "Using BRIEF",
+            "pages": [
+              "guides/recording-conversations",
+              "guides/understanding-outputs",
+              "guides/managing-memory",
+              "guides/sharing-exporting"
+            ]
+          },
+          {
+            "group": "Privacy & Trust",
+            "pages": [
+              "privacy/privacy-center",
+              "privacy/recording-consent",
+              "privacy/data-processing",
+              "privacy/deletion-rights"
+            ]
+          },
+          {
+            "group": "Plans & Pricing",
+            "pages": [
+              "pricing/plans-overview",
+              "pricing/education-plan"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Professional Use",
+            "pages": [
+              "use-cases/consultants-freelancers",
+              "use-cases/managers-teams",
+              "use-cases/sales-client-facing"
+            ]
+          },
+          {
+            "group": "Student Use",
+            "pages": [
+              "use-cases/lecture-recording",
+              "use-cases/study-tools"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "support/faq",
+              "support/audio-quality",
+              "support/arabic-language"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "background": {
+    "color": {
+      "dark": "#2c2c2c"
+    }
+  }
+}

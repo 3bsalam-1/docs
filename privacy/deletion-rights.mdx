@@ -1,0 +1,161 @@
+---
+title: "Deleting Your BRIEF Data: Options, Scope, and Rights"
+sidebarTitle: "Deletion Rights"
+description: "Delete any conversation or all your data permanently from BRIEF's Privacy Center — understand exactly what each deletion option removes and what it means."
+---
+
+You can delete any conversation, or everything, at any time. Deletion in BRIEF is permanent and complete — there is no archive, no soft delete, and no recovery window. Before you delete, you can export any conversation's data from the Privacy Center. This page explains every deletion option, what it actually does at a technical level, and how to act on your rights.
+
+<Warning>
+  Deleting a conversation from BRIEF is irreversible. BRIEF does not maintain a recently deleted folder or any recovery mechanism. Export anything you want to keep before proceeding.
+</Warning>
+
+---
+
+## Your Deletion Options
+
+Access all of the following from **Privacy Center** — either on a specific conversation or from the global account view.
+
+<Tabs>
+  <Tab title="Delete Audio">
+    **What it removes:** The audio file only. Your transcript and any AI-generated notes or outputs are kept.
+
+    **Use this when:** You want to retain the written record of a conversation but no longer need or want the audio recording.
+
+    **What 'deleted' actually means:**
+
+    <Steps>
+      <Step title="Device file removed">
+        The audio file is deleted from local device storage immediately.
+      </Step>
+      <Step title="Cloud copy hard-deleted">
+        If a cloud copy exists (Mode C), it is permanently deleted from BRIEF's storage — not moved to a deletion queue or marked inactive.
+      </Step>
+      <Step title="Encryption key destroyed">
+        The encryption key for this audio file is destroyed (cryptographic erasure). Even if any fragment of the file were to persist in a backup, it cannot be decrypted.
+      </Step>
+      <Step title="Backups purged">
+        Any backup copies are purged on BRIEF's published backup purge schedule. The Privacy Center shows the latest date by which purge will be complete.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Delete Conversation">
+    **What it removes:** Everything — audio (using the process above), plus the transcript, all AI-generated outputs, and every fact extracted from this conversation, including decisions, action items, and any entities identified.
+
+    **Use this when:** You want no trace of this conversation to remain in BRIEF — not just the audio, but everything derived from it.
+
+    **What 'deleted' actually means:**
+
+    <Steps>
+      <Step title="Audio deleted">
+        Full audio deletion as described in the Delete Audio tab above — device file, cloud copy, encryption key, backups.
+      </Step>
+      <Step title="Transcript deleted">
+        The full transcript is permanently removed from your account and from any cloud storage.
+      </Step>
+      <Step title="Outputs deleted">
+        All AI-generated outputs (summaries, notes, action items, highlights) are permanently deleted.
+      </Step>
+      <Step title="Extracted facts deleted">
+        Every fact BRIEF derived from this conversation — decisions, entities, action items, topics — is removed, including from any cross-conversation memory or search indexes (embeddings).
+      </Step>
+    </Steps>
+
+    <Warning>
+      Deleting a conversation removes it from any summaries, insights, or cross-conversation features that drew on it. This cannot be undone.
+    </Warning>
+  </Tab>
+  <Tab title="Delete All Recordings">
+    **What it removes:** Every conversation in your account and all associated data — audio, transcripts, outputs, and extracted facts — using the same complete deletion process as Delete Conversation, applied to your entire archive.
+
+    **Before you proceed:**
+
+    <Steps>
+      <Step title="Export your data">
+        Use **Export all my data** from the Privacy Center to download a full archive of your transcripts, outputs, and metadata. This is the last opportunity to do so.
+      </Step>
+      <Step title="Confirm the action">
+        BRIEF requires explicit confirmation before executing account-wide deletion. There is no undo.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+---
+
+## Exporting Before You Delete
+
+You can export data at any level — a single conversation or your entire account — from the Privacy Center.
+
+<CardGroup cols={2}>
+  <Card title="Export this conversation" icon="file-export">
+    Downloads the transcript, AI outputs, and metadata for a single conversation as a structured file. Available from any conversation's Privacy Center view.
+  </Card>
+  <Card title="Export all my data" icon="database">
+    Generates a full account export: all transcripts, all outputs, all metadata, and your consent records. Processing time scales with archive size. You receive a notification when it is ready.
+  </Card>
+</CardGroup>
+
+---
+
+## Deletion Timelines
+
+BRIEF commits to completing deletion — including from sub-processors and from backups — within a published SLA. The current SLA is shown in the Privacy Center alongside each deletion action.
+
+The relevant dates are:
+
+- **Immediate:** Device file, active cloud copy, and encryption key.
+- **On published purge schedule:** Backup copies at BRIEF and at sub-processors.
+
+If a deletion is taking longer than the published SLA, contact support with the conversation ID for status.
+
+---
+
+## Revoking Cloud Processing Consent
+
+Revoking cloud consent (available from **Privacy Center → Revoke cloud consent**) stops all future cloud processing immediately.
+
+<Accordion title="What happens when you revoke cloud consent">
+  - No new audio or derived data is sent to cloud providers from the moment of revocation.
+  - Data already processed by cloud providers under zero-retention terms has already been deleted at source — it is not retrievable and does not need a separate deletion step.
+  - Outputs and transcripts already returned to your BRIEF archive remain in your account until you delete them separately using the options above.
+  - Your processing mode is automatically set to Mode A (on-device only) for all future recordings.
+</Accordion>
+
+---
+
+## Non-User Participants
+
+If someone appears in one of your recordings and wants their voice or personal data removed, they can submit a data subject request through BRIEF's support contact. They should include:
+
+- The conversation ID (visible in the Privacy Center and in any export)
+- Their name and contact details
+- A description of how they appear in the recording
+
+BRIEF will process the request in accordance with its data subject rights obligations. The account holder may be contacted as part of this process.
+
+<Note>
+  If you receive a request from a participant to remove their data, the simplest action is to delete the conversation from your Privacy Center. This removes all data derived from that conversation, including audio and any facts extracted from it.
+</Note>
+
+---
+
+## Your Data Subject Rights
+
+Beyond deletion, BRIEF supports the full set of data subject rights. Contact BRIEF's privacy team or use the Privacy Center for:
+
+<Accordion title="Access">
+  Request a complete account of what personal data BRIEF holds about you, how it is processed, and the legal basis for each processing activity.
+</Accordion>
+
+<Accordion title="Correction and erasure">
+  Request correction of inaccurate data or erasure of data where BRIEF no longer has a legal basis to retain it.
+</Accordion>
+
+<Accordion title="Restriction">
+  Request that BRIEF restrict processing of your data — for example, while a correction request is being assessed.
+</Accordion>
+
+<Accordion title="Breach notification">
+  In the event of a data breach affecting your personal data, BRIEF will notify you in accordance with its published breach notification policy and applicable law.
+</Accordion>

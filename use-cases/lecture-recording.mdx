@@ -1,0 +1,157 @@
+---
+title: "Record University Lectures & Build Study Notes — BRIEF"
+sidebarTitle: "Lecture Recording"
+description: "Record lectures offline with no Wi-Fi, get structured Arabic/English notes, and trace every concept back to the exact moment it was said."
+---
+
+University lectures in Egypt and the Gulf are delivered in a mix of Arabic and English that no standard note-taking tool handles well — domain vocabulary in English, explanation and context in Arabic, and a pace that makes manual note-taking a losing battle. BRIEF records the lecture as it happens, works entirely offline during class, and produces structured study materials where every concept traces back to the exact moment in the recording where it came from.
+
+<Note>
+  **Coming in V1 — Education Plan.** Lecture recording and study tools are part of the BRIEF Education plan, available to university students aged 18 and above. These features are not available in the current MVP release. Join the waitlist in the app to be notified when the Education plan launches.
+</Note>
+
+---
+
+## The Problem with Lecture Notes
+
+<CardGroup cols={2}>
+  <Card title="Code-Switched Delivery" icon="language">
+    Egyptian and Gulf university lectures mix Arabic explanation with English technical terms, equations, and examples. No existing tool transcribes this accurately. BRIEF is built for it.
+  </Card>
+  <Card title="Speed vs. Understanding" icon="bolt">
+    Trying to write notes at lecture speed means you're transcribing, not understanding. By the time you've written the definition, the lecturer has moved on to the implication.
+  </Card>
+  <Card title="Gaps in the Record" icon="file-slash">
+    Looked up for a moment? Missed a sentence? In standard note-taking, that gap stays a gap. In BRIEF, the full recording fills it.
+  </Card>
+  <Card title="No Tool for the Region" icon="globe">
+    Existing lecture tools are built for monolingual English delivery. They break on Arabic, on dialect, and on the technical register of engineering, medicine, or business taught in the region.
+  </Card>
+</CardGroup>
+
+---
+
+## What BRIEF Produces from a Lecture Recording
+
+After processing a lecture recording, BRIEF generates a full set of structured study materials — each one linked to its source in the recording.
+
+<AccordionGroup>
+  <Accordion title="Structured Summary">
+    The lecture's main points in organized form — not a transcript, but a structured outline of what was covered, in the order it was covered. Use this as your first review after class.
+  </Accordion>
+  <Accordion title="Key Concepts and Definitions">
+    Every term the lecturer defined, every formula introduced, and every principle explained is extracted as a named concept with its definition. These become the backbone of your study materials.
+  </Accordion>
+  <Accordion title="Q&A Extraction">
+    Questions asked during the lecture — by the lecturer rhetorically, by students in the room, or as exam-prep prompts — are extracted along with the answers given. This includes answers the lecturer gave in passing, embedded in the flow of explanation.
+  </Accordion>
+  <Accordion title="Flashcards">
+    One concept per card. Front: term or question. Back: definition or answer. Every flashcard is linked to the timestamp in the recording where the concept was introduced — tap the card to hear the original explanation.
+  </Accordion>
+  <Accordion title="Quiz Questions">
+    Generated questions that test your understanding of the lecture material. Every correct answer is cited from the lecture — you can verify any answer against the original recording.
+  </Accordion>
+  <Accordion title="Learning Gap Detection">
+    BRIEF analyzes the recording for concepts that were introduced but not fully developed, terms that appeared without clear definition, and topics the lecturer flagged as important but moved past quickly. These are surfaced as suggested review areas.
+  </Accordion>
+  <Accordion title="AI Tutor">
+    Ask any question about the lecture content. The AI tutor answers only from what was actually said in the recording — it will not invent explanations or draw from outside sources. Every answer includes a citation to the timestamp where the relevant content appears.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## How to Record a Lecture
+
+<Steps>
+  <Step title="Check your university's recording policy">
+    Before your first lecture recording, confirm that your university permits personal lecture recording. Most do — but policy varies by institution and sometimes by faculty. BRIEF recommends asking your lecturer before recording. Many are supportive and some will engage with the study materials output.
+  </Step>
+  <Step title="Set up before the lecture starts">
+    Open BRIEF and create a new recording. Enter the course name and lecture topic — this groups the recording in your course archive and makes it searchable later. You do not need Wi-Fi or mobile data to record.
+  </Step>
+  <Step title="Keep the recording state visible">
+    BRIEF is designed to be visible, not covert. The recording state indicator is prominently displayed. Place your phone on the desk with the screen visible — this is the appropriate, transparent way to record in an academic setting.
+  </Step>
+  <Step title="Record the full lecture offline">
+    BRIEF captures the audio in Mode A (on-device) throughout the lecture. There is no dependency on campus Wi-Fi, which is often unreliable. The recording runs until you tap Stop.
+  </Step>
+  <Step title="Use the highlight button for important moments">
+    When the lecturer says something that sounds like an exam question, a key definition, or a difficult concept — tap the highlight button. Highlighted moments anchor the flashcard and quiz generation when you process the recording later.
+  </Step>
+  <Step title="Process on Wi-Fi after the lecture">
+    For best results with flashcards and quiz generation, switch to Mode B or C when you return to a Wi-Fi environment after the lecture. Cloud processing provides higher accuracy for academic terminology and mixed-language content.
+  </Step>
+  <Step title="Review the output the same day">
+    Open the structured output while the lecture is still fresh. Review the key concepts, check the learning gaps, and run through the flashcards once. This is the most valuable study session you'll do for that lecture.
+  </Step>
+</Steps>
+
+---
+
+## The Provenance Rule
+
+Every piece of study content BRIEF generates traces back to the exact moment in the lecture where it came from. This is not a convenience feature — it is the fundamental difference between BRIEF and AI tools that generate study material from scratch.
+
+<Tabs>
+  <Tab title="Why Provenance Matters">
+    An AI tool that generates flashcards without a source recording is generating plausible content — but it may not match what your lecturer said, how they defined a term, or which examples they used. Your exam is based on what your lecturer taught, not on what a generative model considers the correct explanation.
+  </Tab>
+  <Tab title="How to Use It">
+    If a flashcard seems wrong, tap it. You hear the moment in the lecture where that concept appeared. You're not comparing the card against a textbook — you're comparing it against what was actually said in your lecture, by your lecturer, in the way they explained it.
+  </Tab>
+  <Tab title="For the AI Tutor">
+    The AI tutor is grounded in your specific lecture recording. Ask 'how did Dr. Ahmed explain recursion?' and the answer comes from the recording — not from a generic explanation. Every answer includes a timestamp citation so you can verify it against the source.
+  </Tab>
+</Tabs>
+
+---
+
+## Building a Course Archive
+
+Across a semester, BRIEF builds a complete archive of every lecture you've recorded for a course.
+
+<Steps>
+  <Step title="Label consistently">
+    Use the same course name for every recording in the same course. 'COMP 301' as a consistent prefix means all lectures are grouped automatically in the course archive.
+  </Step>
+  <Step title="Search across the whole course">
+    Before exams, search 'everything this course said about neural networks' or 'all definitions from COMP 301'. BRIEF retrieves results across all recorded lectures in the course — not just the most recent one.
+  </Step>
+  <Step title="Enter revision mode">
+    Open the course in BRIEF and enter **Revision Mode** before exams. BRIEF surfaces the most important concepts across all lectures, unsolved questions flagged during the semester, and suggested flashcard sets for high-priority topics.
+  </Step>
+</Steps>
+
+---
+
+## Privacy When Recording Lectures
+
+<Warning>
+  BRIEF does not support sharing lecture audio recordings with others. Sharing the audio itself — by forwarding the recording file, sharing access, or any other method — may implicate your university's academic integrity policies and applicable law in your jurisdiction. Sharing derived study materials (your personal summaries, flashcards, and notes) is your decision and responsibility; sharing the recording is a different matter entirely.
+</Warning>
+
+<Note>
+  Because lectures typically have one dominant speaker, BRIEF handles the transcript differently from a multi-participant meeting. The lecturer's voice is not enrolled as a named speaker profile and is not stored as a biometric identifier.
+</Note>
+
+Keep the recording state visible during lectures. BRIEF is designed for transparent, disclosed recording — not covert capture. This protects you, respects your lecturers, and keeps you within the boundaries of your institution's policies.
+
+---
+
+## Tips for Lecture Recording
+
+<AccordionGroup>
+  <Accordion title="Record in Mode A during the lecture, switch to Mode C after">
+    Use Mode A (fully offline, on-device) during the lecture — no dependency on campus Wi-Fi, no upload during class. Switch to Mode C when you get back to a reliable connection for the best flashcard and quiz generation quality.
+  </Accordion>
+  <Accordion title="Use highlights strategically">
+    Tap the highlight button whenever the lecturer says something that sounds like a definition, an exam question, or a concept they're returning to for emphasis. Highlights anchor the study material generation and tell BRIEF what mattered most in this lecture.
+  </Accordion>
+  <Accordion title="Ask your lecturer before you start">
+    Most lecturers are supportive of personal lecture recording for study purposes. Asking shows respect and sometimes leads to the lecturer sharing additional materials — or engaging with the study outputs BRIEF generates from their lecture.
+  </Accordion>
+  <Accordion title="Review flashcards the same day">
+    The highest-impact study habit is reviewing BRIEF flashcards within a few hours of the lecture. BRIEF will suggest a spaced-repetition schedule — the first review should happen while the material is still fresh.
+  </Accordion>
+</AccordionGroup>

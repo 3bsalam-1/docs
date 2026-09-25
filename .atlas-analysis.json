@@ -1,0 +1,110 @@
+{
+  "projectType": "saas",
+  "projectName": "BRIEF",
+  "projectDescription": "BRIEF is an AI Conversation Intelligence & Memory platform that captures important spoken conversations, understands what happened, turns them into useful outcomes, and remembers them — with Arabic and privacy at the core.",
+  "theme": "almond",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "how-brief-works"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/conversation-intelligence",
+              "concepts/ai-memory",
+              "concepts/processing-modes",
+              "concepts/privacy-consent"
+            ]
+          },
+          {
+            "group": "Using BRIEF",
+            "pages": [
+              "guides/recording-conversations",
+              "guides/understanding-outputs",
+              "guides/managing-memory",
+              "guides/sharing-exporting"
+            ]
+          },
+          {
+            "group": "Privacy & Trust",
+            "pages": [
+              "privacy/privacy-center",
+              "privacy/recording-consent",
+              "privacy/data-processing",
+              "privacy/deletion-rights"
+            ]
+          },
+          {
+            "group": "Plans & Pricing",
+            "pages": [
+              "pricing/plans-overview",
+              "pricing/education-plan"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Professional Use",
+            "pages": [
+              "use-cases/consultants-freelancers",
+              "use-cases/managers-teams",
+              "use-cases/sales-client-facing"
+            ]
+          },
+          {
+            "group": "Student Use",
+            "pages": [
+              "use-cases/lecture-recording",
+              "use-cases/study-tools"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "support/faq",
+              "support/audio-quality",
+              "support/arabic-language"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Offline-first conversation capture — records with no internet required",
+    "Arabic + English + code-switch speech recognition, tuned for Egyptian and Gulf dialects",
+    "Automatic conversation classification (Professional or Generic) with type-specific structured outputs",
+    "Speaker diarization and label identification (who said what)",
+    "Three processing modes: fully on-device (Mode A), hybrid (Mode B), and cloud-enhanced (Mode C)",
+    "Consent-first recording with a configurable Recording Policy Engine",
+    "Privacy Center with per-conversation processing transparency and data deletion controls",
+    "Conversation Archive (AI Memory) — searchable history with provenance-linked facts",
+    "WhatsApp-ready share, PDF export, and bilingual Arabic/English outputs",
+    "Subscription tiers across Free, Starter, Pro, Business, and Enterprise with separate Egypt and GCC pricing"
+  ],
+  "publicApiSurface": [
+    "Conversation recording (one-tap, background-safe, offline-capable)",
+    "Professional Conversation output: summary, key points, decisions, action items, owners, deadlines, risks, requirements, commitments, follow-ups",
+    "Generic Conversation output: summary, key points, questions, action items, important moments",
+    "Speaker Labels: per-conversation speaker identification with LLM name inference and one-tap correction",
+    "Processing Mode selection: Mode A (on-device), Mode B (hybrid), Mode C (cloud)",
+    "Privacy Center: per-conversation data transparency, delete audio, delete conversation, export data, revoke cloud consent",
+    "Conversation Archive: history view, basic search, search-within-conversation, fact retrieval with provenance",
+    "Share and export: WhatsApp, PDF, DOCX, copy, bilingual output"
+  ]
+}

@@ -1,0 +1,162 @@
+---
+title: "Conversation Intelligence: How BRIEF Understands You"
+sidebarTitle: "Conversation Intelligence"
+description: "Learn how BRIEF captures, transcribes, classifies, and extracts structured meaning from your spoken Arabic and English conversations."
+---
+
+BRIEF turns spoken conversations into structured knowledge by running every recording through a multi-stage pipeline — from raw audio all the way to actionable decisions, named owners, and timestamped commitments. Understanding how that pipeline works helps you trust what BRIEF surfaces and know exactly where every extracted fact comes from.
+
+## The Intelligence Pipeline
+
+Every conversation you record moves through the same sequence of stages before structured output appears in your archive.
+
+<Steps>
+  <Step title="Capture">
+    You start a recording. BRIEF captures audio on your device according to the processing mode you've chosen. Nothing is transmitted or processed until you stop.
+  </Step>
+  <Step title="Transcription">
+    Your audio is converted to text. BRIEF's transcription layer handles Modern Standard Arabic, Egyptian dialect, Gulf dialect, and natural Arabic/English code-switching — the way professionals in the region actually speak.
+  </Step>
+  <Step title="Speaker Diarization">
+    BRIEF separates the transcript into speaker turns, labelling each segment as Speaker 1, Speaker 2, and so on. No biometric voiceprints are stored — labels are plain text anchored to time ranges in the transcript.
+  </Step>
+  <Step title="Classification">
+    BRIEF reads the completed transcript and automatically classifies the conversation as either **Professional** or **Generic**. The result appears as an editable chip on your output screen. You never choose a type before you record.
+  </Step>
+  <Step title="Structured Extraction">
+    Based on the conversation type, BRIEF's language models extract the structured output fields relevant to that type — decisions, action items, questions, risks, and more.
+  </Step>
+  <Step title="Output & Provenance Linking">
+    Every extracted item is linked back to the exact timestamp in the transcript where it was said. Tap any item to jump straight to that moment in the recording.
+  </Step>
+</Steps>
+
+---
+
+## Conversation Classification
+
+After your recording ends, BRIEF reads the full transcript and decides whether the conversation is best described as Professional or Generic. The chosen type appears as a small chip at the top of your output screen.
+
+<Note>
+  There is no type-picker before you record. Classification is automatic because BRIEF can only make a confident judgment once it has seen the full conversation — not before it starts.
+</Note>
+
+If the automatic classification is wrong, tap the chip, select the other type, and tap **Regenerate**. BRIEF re-runs extraction using the correct set of output fields immediately.
+
+---
+
+## Professional Conversation Outputs
+
+A Professional conversation is one where structured accountability matters — a meeting with a client, a project sync, a requirements session, a decision call. BRIEF applies the same Professional output system to all of these; the sections that appear depend entirely on what was actually discussed.
+
+<CardGroup cols={2}>
+  <Card title="Summary" icon="file-lines">
+    A concise narrative of what the conversation covered, written to stand alone without the transcript.
+  </Card>
+  <Card title="Key Points" icon="list-check">
+    The most important statements and positions from the conversation, each linked to its timestamp.
+  </Card>
+  <Card title="Decisions" icon="gavel">
+    Explicit decisions that were reached, with context about what was decided and by whom.
+  </Card>
+  <Card title="Action Items" icon="circle-check">
+    Tasks that were agreed upon, each with an owner (named person) and a deadline where one was mentioned.
+  </Card>
+  <Card title="Risks" icon="triangle-exclamation">
+    Concerns, blockers, or uncertainties that were raised but not fully resolved.
+  </Card>
+  <Card title="Requirements" icon="clipboard-list">
+    Functional or non-functional requirements that were stated or agreed upon during the conversation.
+  </Card>
+  <Card title="Commitments" icon="handshake">
+    Promises or guarantees made by any participant — distinct from action items in that they carry an obligation.
+  </Card>
+  <Card title="Follow-ups" icon="arrow-right">
+    Topics or questions deferred to a future conversation, with any associated dates or owners mentioned.
+  </Card>
+</CardGroup>
+
+<Tip>
+  If a conversation doesn't contain any risks, the Risks section simply won't appear. BRIEF only surfaces sections that have real content — it never fills in placeholders.
+</Tip>
+
+---
+
+## Generic Conversation Outputs
+
+A Generic conversation is one where the goal is understanding and recall rather than structured accountability — a brainstorm, a casual debrief, a voice memo, a creative session. BRIEF extracts a lighter set of fields suited to open-ended discussion.
+
+<CardGroup cols={2}>
+  <Card title="Summary" icon="file-lines">
+    A narrative overview of what was discussed.
+  </Card>
+  <Card title="Key Points" icon="list-check">
+    The standout ideas and statements from the conversation.
+  </Card>
+  <Card title="Questions" icon="circle-question">
+    Open questions that were raised, whether or not they were answered.
+  </Card>
+  <Card title="Action Items" icon="circle-check">
+    Tasks that emerged, even if informally stated.
+  </Card>
+  <Card title="Important Moments" icon="star">
+    Timestamped highlights — a strong insight, a surprising statement, a turning point in the discussion.
+  </Card>
+</CardGroup>
+
+---
+
+## Speaker Labels and Name Inference
+
+BRIEF uses diarization to assign each speech segment to a speaker. Out of the box, speakers are labelled **Speaker 1**, **Speaker 2**, and so on. BRIEF then reads the transcript for conversational cues — a greeting like "شكراً أحمد" (*thanks Ahmed*) or "good point, Sarah" — and infers real names where the evidence is strong.
+
+<Steps>
+  <Step title="Automatic inference">
+    After processing, BRIEF shows any names it inferred alongside the generic labels. Inferred names appear with a light indicator so you know they came from context, not certainty.
+  </Step>
+  <Step title="One-tap correction">
+    Tap any speaker label to rename it. Type the correct name and confirm. The change applies retroactively across the entire transcript and all extracted output for that conversation.
+  </Step>
+  <Step title="No biometric storage">
+    BRIEF stores only plain-text labels tied to time ranges. It does not build voice profiles, store audio fingerprints, or link speaker identities across different conversations.
+  </Step>
+</Steps>
+
+<Note>
+  Speaker label corrections are per-conversation. Renaming Speaker 2 to "Layla" in one conversation does not affect any other recording.
+</Note>
+
+---
+
+## Arabic and Code-Switch Support
+
+BRIEF's transcription layer is built for the way Arabic-speaking professionals actually communicate — which is rarely monolingual.
+
+<Accordion title="Dialect support">
+  BRIEF recognises Modern Standard Arabic alongside Egyptian and Gulf dialects. Dialect recognition is applied automatically based on what it detects in the audio; you do not need to select a dialect before recording.
+</Accordion>
+
+<Accordion title="Arabic/English code-switching">
+  Switching mid-sentence between Arabic and English is treated as a single coherent stream, not two separate channels. Technical terms, product names, and English phrases embedded in Arabic speech are transcribed accurately and preserved in the correct position in the transcript.
+</Accordion>
+
+<Accordion title="Structured output in mixed-language conversations">
+  Extracted fields — decisions, action items, and the rest — are written in the dominant language of the conversation. If the conversation was primarily in Arabic, the output is in Arabic. BRIEF does not force a translation or a uniform output language.
+</Accordion>
+
+---
+
+## Provenance: Every Fact Has a Source
+
+Every item BRIEF extracts — every decision, every action item, every commitment — is linked back to the exact timestamp in the transcript where it was spoken.
+
+<CardGroup cols={2}>
+  <Card title="Tap to verify" icon="magnifying-glass">
+    Tap any extracted item to see the original transcript segment it came from.
+  </Card>
+  <Card title="Jump to the moment" icon="play">
+    If audio is available under your retention policy, tap again to jump directly to that moment in the recording.
+  </Card>
+</CardGroup>
+
+Provenance means you are never asked to trust the AI blindly. You can read exactly what was said, in context, in the words that were spoken. If the extraction is wrong, you can see why — and correct the speaker label, edit the item, or regenerate with the correct conversation type.

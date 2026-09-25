@@ -1,0 +1,167 @@
+---
+title: "Privacy & Consent: Keeping Every Participant Informed"
+sidebarTitle: "Privacy & Consent"
+description: "Learn how BRIEF's consent-first design, Recording Policy Engine, and transparent recording state keep every participant informed and protected."
+---
+
+BRIEF is built on a single non-negotiable principle: recording is always a deliberate, visible act — never something that happens silently or by default. Every design decision in BRIEF's recording experience flows from this. There is no background capture, no automatic trigger, no way to use BRIEF to record someone without it being apparent that a recording is taking place. This is not a limitation; it is the product.
+
+---
+
+## The Core Principle
+
+You press record. BRIEF records. You stop. BRIEF stops. The recording state is always visible on your screen while it is active, and the operating system's own recording indicator is never suppressed. These two facts are architectural — they cannot be changed by a setting, a subscription tier, or a future update.
+
+<Warning>
+  BRIEF will never add a stealth or discreet recording mode. If a feature request, third-party integration, or future product update would require hiding the recording state from any participant, BRIEF will not build it. This commitment is documented in BRIEF's product principles, not just its privacy policy.
+</Warning>
+
+---
+
+## The Recording Policy Engine
+
+Different recording situations carry different consent obligations. A solo voice memo has no other data subject. A meeting with external clients carries a disclosure obligation. The Recording Policy Engine is a configurable consent layer that evaluates your situation and outputs specific guidance — automatically, before you record.
+
+### What the engine evaluates
+
+<AccordionGroup>
+  <Accordion title="Jurisdiction">
+    Recording consent laws differ significantly across the Arab world, Europe, and other jurisdictions. BRIEF uses your device's region setting to apply a baseline policy appropriate to your jurisdiction. You can also manually set your jurisdiction in **Settings → Privacy → Jurisdiction**.
+  </Accordion>
+  <Accordion title="Conversation type">
+    A professional meeting between colleagues, a client call, and a personal voice memo each carry different consent implications. The engine adjusts its output based on the conversation type you're recording.
+  </Accordion>
+  <Accordion title="Participant context">
+    Who else is present? Are they colleagues in your organisation? External parties from another company? Members of the public? The engine uses the participant context you set on the recording setup screen — or infers it from your default settings.
+  </Accordion>
+  <Accordion title="Your privacy settings">
+    You can set stricter defaults than the engine's baseline. For example, you can require an announcement prompt for all recording contexts, not just professional ones.
+  </Accordion>
+</AccordionGroup>
+
+### What the engine produces
+
+For each recording session, the engine outputs four things:
+
+<CardGroup cols={2}>
+  <Card title="Disclosure requirement" icon="megaphone">
+    One of: no announcement needed (solo), on-screen visible state only, prompt to announce verbally, or show-and-acknowledge (you confirm that participants have been informed before recording begins).
+  </Card>
+  <Card title="Cloud processing permission" icon="cloud">
+    Whether cloud processing (Mode C) is permitted for this recording context, based on your jurisdiction and participant sensitivity settings.
+  </Card>
+  <Card title="Audio sharing permission" icon="share-nodes">
+    Whether this recording's audio can be shared via export or team features, and under what conditions.
+  </Card>
+  <Card title="Retention default" icon="clock">
+    The default audio retention period for this recording type — how long audio is kept before automatic deletion, separate from the transcript and structured output.
+  </Card>
+</CardGroup>
+
+---
+
+## Consent Defaults by Situation
+
+<Tabs>
+  <Tab title="Solo voice memo">
+    You are the only participant. There is no other data subject whose consent is required.
+
+    **Default behaviour:** Recording starts immediately when you tap the record button. The recording state is visible on your screen and the OS indicator is active, but no announcement is required or prompted.
+
+    **Consent record stored:** Records that this was a solo recording with no other participants present.
+  </Tab>
+
+  <Tab title="Professional meeting (known colleagues)">
+    You are recording a meeting with colleagues inside your organisation.
+
+    **Default behaviour:** BRIEF shows the recording state visibly on your screen and displays a prompt: *"Announce to the room that you're recording."* You are not blocked from starting — it is a prompt, not a gate. You can dismiss it and start recording, but the prompt is shown every time unless you change your default in Settings.
+
+    **Consent record stored:** Records whether the announcement prompt was shown, whether it was acknowledged, and the timestamp.
+  </Tab>
+
+  <Tab title="Client or external meeting">
+    You are recording a conversation with people outside your organisation — clients, partners, candidates, press.
+
+    **Default behaviour:** BRIEF shows the announcement prompt and offers an additional option: display a **"Recording in Progress"** screen that you can turn your phone or show to the room. Recording does not begin until you confirm the prompt.
+
+    <Tip>
+      Showing the "Recording in Progress" screen to participants is a feature, not a warning. BRIEF users who use it consistently report that it builds trust in the room — participants appreciate the transparency and are more candid, not less.
+    </Tip>
+
+    **Consent record stored:** Records whether the "Recording in Progress" screen was displayed, when the confirmation was given, and which policy version applied.
+  </Tab>
+
+  <Tab title="Unannounced third party present">
+    A person is present in the recording context who has not been told that recording is taking place — for example, someone who joined a call unexpectedly, or a new arrival in a physical meeting room.
+
+    **Default behaviour:** BRIEF displays a **blocking prompt**. Recording is paused or does not start until you explicitly acknowledge the situation. The prompt reads: *"Someone who hasn't been informed about recording is present. Announce the recording or stop before continuing."* You cannot dismiss this prompt without taking one of the two actions.
+
+    **Consent record stored:** Records the blocking event, the action taken (announced or stopped), and the timestamp.
+  </Tab>
+</Tabs>
+
+---
+
+## The Consent Record
+
+Every conversation in your Archive includes a consent record — a structured log of the disclosure that was made.
+
+<ResponseField name="Disclosure type" type="enum">
+  Which disclosure requirement applied: none (solo), on-screen state only, announcement prompt shown, show-and-acknowledge completed, or blocking prompt triggered.
+</ResponseField>
+
+<ResponseField name="Disclosure timestamp" type="timestamp">
+  When the disclosure action was completed and recording began.
+</ResponseField>
+
+<ResponseField name="Policy version" type="string">
+  Which version of the Recording Policy Engine produced this disclosure requirement. Allows you to audit your consent history even after policy defaults are updated.
+</ResponseField>
+
+<ResponseField name="Participant context" type="string">
+  The participant context that was active when the policy was evaluated: solo, known colleagues, external parties, or unknown third party present.
+</ResponseField>
+
+The consent record is stored permanently with the conversation. It cannot be edited or deleted separately from the conversation itself.
+
+---
+
+## What BRIEF Will Never Build
+
+<CardGroup cols={2}>
+  <Card title="Stealth or discreet recording" icon="eye-slash">
+    No mode that hides the recording state from any participant — including the person doing the recording.
+  </Card>
+  <Card title="OS indicator suppression" icon="ban">
+    No technique to suppress, obscure, or work around the operating system's own recording indicator.
+  </Card>
+  <Card title="Always-on ambient capture" icon="microphone-slash">
+    No background listening, no wake-word detection, no passive audio capture without an explicit tap to start.
+  </Card>
+  <Card title="Automatic recording triggers" icon="robot">
+    No calendar integration, location trigger, or scheduled recording that starts without a deliberate action from you. BRIEF will never start recording because you walked into a meeting room.
+  </Card>
+</CardGroup>
+
+These are not features that BRIEF has chosen not to prioritise — they are capabilities BRIEF has decided not to build. The distinction matters: a future update, a partner integration, or a commercial arrangement will not change this.
+
+---
+
+## Adjusting Your Consent Defaults
+
+Your Recording Policy defaults are set during onboarding, but you can adjust any of them at any time.
+
+<Steps>
+  <Step title="Open Privacy Settings">
+    Go to **Settings → Privacy → Recording Policy**.
+  </Step>
+  <Step title="Review your participant context defaults">
+    Each participant context (solo, known colleagues, external parties) shows its current disclosure requirement. Tap any context to change it.
+  </Step>
+  <Step title="Set a stricter default if needed">
+    You can make any context stricter than the baseline — for example, requiring show-and-acknowledge for all professional meetings, not just external ones. You cannot set a default that is less strict than your jurisdiction baseline.
+  </Step>
+  <Step title="Review jurisdiction setting">
+    Confirm that your jurisdiction is set correctly. If you regularly record in multiple jurisdictions, set the strictest one as your default and adjust per-recording as needed.
+  </Step>
+</Steps>

@@ -1,0 +1,149 @@
+---
+title: "Processing Modes: Choose How BRIEF Handles Your Audio"
+sidebarTitle: "Processing Modes"
+description: "Understand BRIEF's three processing modes — on-device, hybrid, and cloud-enhanced — and pick the right privacy and accuracy level for your recording."
+---
+
+BRIEF gives you explicit, meaningful control over what happens to your audio after you record. Before a single byte leaves your device, you have already decided how it will be handled. The three processing modes represent three genuinely different architectures — not just marketing tiers — and you can set a different mode for any individual conversation if your needs change.
+
+---
+
+## The Three Modes at a Glance
+
+<Tabs>
+  <Tab title="Mode A — On This Phone Only">
+    Audio never leaves your device. Transcription and all AI extraction run entirely on your phone's processor. Nothing is transmitted — not the audio, not the transcript, not any derived data — unless you explicitly turn on a specific opt-in feature that requires it.
+
+    **Mode A is the default for the Free tier and the Education plan.** Because on-device processing costs BRIEF nothing to run, this mode is always available at every subscription level, including Free.
+
+    <CardGroup cols={2}>
+      <Card title="Best privacy possible" icon="shield-halved">
+        No network call is made during processing. Even a network monitor would see nothing.
+      </Card>
+      <Card title="Works fully offline" icon="wifi-slash">
+        Record and process with no internet connection. Useful when travelling, in secure environments, or in areas with poor connectivity.
+      </Card>
+      <Card title="Always available" icon="infinity">
+        On-device processing is never metered, throttled, or paused. It is available at every tier including Free.
+      </Card>
+      <Card title="Accuracy note" icon="microchip">
+        On some mid-range Android devices, on-device models may produce slightly lower transcription accuracy than cloud processing, particularly for long recordings or heavy code-switching.
+      </Card>
+    </CardGroup>
+  </Tab>
+
+  <Tab title="Mode B — Hybrid">
+    Your audio stays on your device at all times. Only derived text — the transcript BRIEF has already produced on-device — is optionally sent out for specific features you explicitly turn on, such as enhanced summarisation or cross-device sync. You choose which features trigger network use; BRIEF does not send data for any feature you have not enabled.
+
+    <CardGroup cols={2}>
+      <Card title="Audio stays local" icon="lock">
+        The audio file never leaves your phone. Only text derived from it may travel, and only for features you opt into.
+      </Card>
+      <Card title="Good accuracy" icon="chart-bar">
+        Transcription quality is comparable to Mode A on the same device. Opted-in cloud features may improve downstream extraction quality.
+      </Card>
+      <Card title="Moderate battery use" icon="battery-half">
+        On-device transcription uses the same processing resources as Mode A. Any cloud feature activity adds a small additional load.
+      </Card>
+      <Card title="Requires internet for opted-in features only" icon="globe">
+        Recording and transcription work offline. Cloud features require connectivity only at the moment they run.
+      </Card>
+    </CardGroup>
+  </Tab>
+
+  <Tab title="Mode C — Cloud Enhanced">
+    Your audio is sent to BRIEF's cloud processing providers for transcription and extraction. This gives you the highest accuracy and the fastest turnaround, particularly on long recordings, heavy dialect mixing, or complex code-switching. Audio is deleted from cloud infrastructure after processing is complete.
+
+    BRIEF publishes which providers handle cloud processing and in which country that processing occurs. You can review the current provider list in **Settings → Privacy → Cloud Providers**.
+
+    <CardGroup cols={2}>
+      <Card title="Best accuracy" icon="sparkles">
+        Cloud models are larger and more capable than on-device models, producing the highest transcription and extraction quality available in BRIEF.
+      </Card>
+      <Card title="Fastest processing" icon="bolt">
+        Cloud infrastructure processes recordings faster than on-device, especially for recordings over 30 minutes.
+      </Card>
+      <Card title="Audio deleted after processing" icon="trash">
+        BRIEF's cloud providers do not retain your audio. It is deleted once the transcript and structured output have been produced.
+      </Card>
+      <Card title="Requires internet" icon="globe">
+        Mode C requires an active internet connection. If connectivity is lost during processing, BRIEF will retry automatically when the connection is restored.
+      </Card>
+    </CardGroup>
+  </Tab>
+</Tabs>
+
+---
+
+## Side-by-Side Comparison
+
+| | **Mode A** | **Mode B** | **Mode C** |
+|---|---|---|---|
+| **Audio leaves device?** | Never | Never | Yes, then deleted |
+| **Internet required?** | No | Only for opted-in features | Yes |
+| **Transcription accuracy** | Good (device-dependent) | Good (device-dependent) | Best |
+| **Battery use** | Moderate (on-device processing) | Moderate | Low (offloaded) |
+| **Best for** | Maximum privacy, offline use, secure environments | Privacy-first with selective cloud features | Best output quality, long recordings, heavy dialect mixing |
+
+<Note>
+  On-device processing (Mode A) is never metered or limited. It costs BRIEF nothing to run and is available at every subscription tier, including Free. You will never be asked to upgrade to access Mode A.
+</Note>
+
+---
+
+## How to Choose Your Mode
+
+### Set a default at onboarding
+
+When you first open BRIEF, you are asked one plain question about how you'd like your conversations to be processed. The three answers map directly to Mode A, B, and C — described in plain language, without marketing language or pressure to choose a higher tier.
+
+Your answer becomes your default mode for all new recordings. You can change it at any time in **Settings → Privacy → Default Processing Mode**.
+
+### Change mode for a specific conversation
+
+Before you start any recording, open the recording setup screen. A mode selector shows your current default and lets you switch to a different mode for this conversation only. Your default is unchanged.
+
+<Steps>
+  <Step title="Open the recording setup screen">
+    Tap the record button. Before the recording starts, the setup screen appears showing your current default mode.
+  </Step>
+  <Step title="Tap the mode selector">
+    Tap the mode chip to expand the three options with a short description of each.
+  </Step>
+  <Step title="Select a mode and start recording">
+    Tap your chosen mode and then tap **Start Recording**. The selected mode is shown on the recording screen throughout the session.
+  </Step>
+</Steps>
+
+### Re-process a Mode A recording in Mode C
+
+If you recorded a conversation in Mode A and want better output quality, you can re-process it in Mode C later.
+
+<Warning>
+  Before re-processing begins, BRIEF shows a clear disclosure: "Re-processing this recording in Cloud Enhanced mode will send the audio to BRIEF's cloud providers. The audio will be deleted after processing. This action cannot be undone." You must confirm before the upload begins.
+</Warning>
+
+<Steps>
+  <Step title="Open the conversation in your Archive">
+    Navigate to the conversation you want to re-process.
+  </Step>
+  <Step title="Tap Re-process">
+    Tap the overflow menu (⋯) and select **Re-process with Cloud Enhanced**.
+  </Step>
+  <Step title="Read and confirm the disclosure">
+    Read the disclosure screen carefully. Tap **Confirm** to begin, or **Cancel** to keep the existing output.
+  </Step>
+  <Step title="Review the new output">
+    Once re-processing is complete, the conversation is updated with the new transcript and structured output. The processing mode recorded in the Archive is updated to Mode C.
+  </Step>
+</Steps>
+
+---
+
+## The Rule BRIEF Never Breaks
+
+<Warning>
+  **BRIEF never automatically upgrades a recording to a higher processing mode.** If you record in Mode A, your audio stays on your device — permanently, regardless of output quality. BRIEF will never silently send audio to the cloud to improve a transcript. Every upgrade to a higher mode requires your explicit action and, in the case of re-processing, a clear disclosure.
+</Warning>
+
+Your choice of processing mode is a privacy decision, not just a quality setting. BRIEF treats it that way.

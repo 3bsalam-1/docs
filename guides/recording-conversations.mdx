@@ -1,0 +1,172 @@
+---
+title: "Recording Conversations in BRIEF: From Tap to Transcript"
+sidebarTitle: "Recording"
+description: "Learn to record conversations in BRIEF — from tapping record and choosing a processing mode to managing highlights and understanding processing times."
+---
+
+Recording a conversation in BRIEF takes a single tap. BRIEF handles the rest — transcription, speaker separation, and structured output — so you can stay present in the room instead of taking notes. This guide walks you through every stage of the recording flow, from granting microphone access to watching your first output appear.
+
+## Before You Start
+
+You don't need an account to record. Mode A (fully on-device) and Mode B (hybrid — audio local, derived text optionally sent) both work without a sign-in. Cloud processing (Mode C) requires an account and consumes your monthly cloud AI hours.
+
+The one thing BRIEF does need before your first recording is microphone access. When you tap record for the first time, your device will prompt you to grant permission. Tap **Allow** — without it, BRIEF cannot capture audio.
+
+<Note>
+  Grant microphone permission once and BRIEF remembers it. You won't be asked again unless you revoke access in your device settings.
+</Note>
+
+---
+
+## Starting a Recording
+
+<Steps>
+  <Step title="Tap the Record button">
+    Open BRIEF and tap the large **Record** button on the home screen. You can also start a recording without opening the app:
+
+    <CardGroup cols={2}>
+      <Card title="Home Screen Widget" icon="grid-2">
+        Add the BRIEF widget to your home screen for one-tap recording from anywhere.
+      </Card>
+      <Card title="Lock Screen Shortcut" icon="lock">
+        Assign BRIEF to your lock screen action button to start recording before you've even unlocked your phone.
+      </Card>
+    </CardGroup>
+  </Step>
+
+  <Step title="Review the Recording Setup screen">
+    The Recording Setup screen appears before BRIEF starts capturing audio. If you've recorded before, the fields are pre-filled from your last session — you can confirm and continue in seconds, or adjust anything before you begin.
+  </Step>
+</Steps>
+
+---
+
+## The Recording Setup Screen
+
+The setup screen has three sections. None of them block you from recording — fill in what's useful and move on.
+
+<Accordion title="Conversation Context">
+  BRIEF auto-detects context from signals like time of day, calendar events (if you've connected your calendar), and your recent conversation history. The suggested title, participants, and topic are editable. The more accurate the context, the better BRIEF can anchor the summary.
+</Accordion>
+
+<Accordion title="Processing Mode">
+  Choose how BRIEF processes your recording. Your last-used mode is pre-selected.
+
+  | Mode | Where it runs | Best for |
+  |------|--------------|----------|
+  | **Mode A** | Fully on your device | Maximum privacy; audio never leaves your phone; no internet required |
+  | **Mode B** | Hybrid — audio stays local, only derived text optionally sent | Balance of privacy and accuracy; no audio upload |
+  | **Mode C** | Cloud | Fastest results; highest accuracy; uses cloud AI hours |
+
+  <Tip>
+    If you're in a sensitive meeting — legal, HR, medical — use Mode A. Your audio never leaves your device.
+  </Tip>
+</Accordion>
+
+<Accordion title="Consent & Disclosure">
+  Depending on your situation, BRIEF will prompt you with a consent action appropriate to your context — for example, a reminder to inform other participants that the conversation is being recorded, or a log that you've obtained consent. This step varies by region and meeting type. Handle it before you tap **Start Recording**.
+</Accordion>
+
+---
+
+## The Active Recording State
+
+Once you tap **Start Recording**, BRIEF displays a persistent recording indicator. It stays visible even if you switch apps, so you always know a recording is active.
+
+<CardGroup cols={3}>
+  <Card title="Pause" icon="pause">
+    Tap once to pause. The timer freezes. Tap again to resume. Paused segments are treated as one continuous conversation.
+  </Card>
+  <Card title="Highlight" icon="star">
+    Tap the star icon to mark the current moment as important. These highlights anchor the summary — BRIEF pays extra attention to the surrounding context when generating outputs.
+  </Card>
+  <Card title="Stop" icon="stop">
+    Tap once to end the recording. Processing begins immediately.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Use highlights liberally. Every time a decision is made, an action item is assigned, or a key number is mentioned — tap the star. You're telling BRIEF exactly where to focus.
+</Tip>
+
+---
+
+## During the Recording
+
+You don't need to do anything once recording starts — BRIEF captures continuously in the background. A few habits make a meaningful difference in output quality:
+
+- **Keep your phone on the table**, face-up, within 1–2 metres of all speakers. Don't hold it to your ear.
+- **Minimise background noise** where possible — close doors, move away from air conditioning units or printers.
+- **Speak naturally.** BRIEF is trained on real Arabic-English code-switched speech. You don't need to slow down, switch to formal Arabic, or avoid English terms.
+- **Introduce speakers by name early** in the conversation. Even a simple "أنا أحمد، ومعي سارة" at the start helps BRIEF's speaker-labelling model.
+
+---
+
+## Ending a Recording
+
+Tap **Stop**. BRIEF immediately begins processing. You'll be taken to the conversation output screen, where content appears progressively as it's ready.
+
+<Steps>
+  <Step title="Tap Stop">
+    The recording ends. BRIEF saves the audio and begins transcription and extraction in the background.
+  </Step>
+  <Step title="Watch the draft appear">
+    A partial draft view appears first — usually within seconds. You'll see a progress indicator as BRIEF works through the full output.
+  </Step>
+  <Step title="Review the full output">
+    Once processing completes, all output sections are populated: summary, key points, decisions, action items, and more. The conversation is automatically saved to your Conversation Archive.
+  </Step>
+</Steps>
+
+---
+
+## Processing Times by Mode
+
+How long you wait depends on your processing mode and your device.
+
+<Tabs>
+  <Tab title="Mode C (Cloud)">
+    **Target: under 2 minutes for a 60-minute conversation.**
+
+    Cloud processing is the fastest option. BRIEF sends your audio to secure servers, processes it, and returns the full output — typically before you've packed up from the meeting.
+
+    Requires an account and available cloud AI hours.
+  </Tab>
+  <Tab title="Mode A — Flagship Device">
+    **Target: under 10 minutes for a 60-minute conversation.**
+
+    Processing runs entirely on your device using its dedicated neural processing hardware. No audio leaves your phone. Expect a short wait after longer meetings.
+  </Tab>
+  <Tab title="Mode A — Mid-Range Android">
+    **Processing time varies by device.**
+
+    On mid-range Android hardware, on-device processing for long recordings can take significantly longer. BRIEF optimises for battery and thermal limits, which means processing may be deferred.
+
+    <Note>
+      If BRIEF shows **"notes ready when you next charge"** for a long recording on a mid-range device, this is intentional — not an error. BRIEF is scheduling heavy processing for when your device is plugged in and cool, to avoid draining your battery or throttling performance. Your audio is safe. Your notes will be there when you wake up.
+    </Note>
+
+    <Tip>
+      **Android battery optimisation:** Some Android manufacturers aggressively restrict background activity. If BRIEF's processing stalls or takes unusually long, go to **Settings → Apps → BRIEF → Battery** and set it to **Unrestricted**. This allows BRIEF to complete processing in the background without being paused by the system.
+    </Tip>
+  </Tab>
+</Tabs>
+
+---
+
+## Tips for Better Recordings
+
+<CardGroup cols={2}>
+  <Card title="Phone placement" icon="mobile">
+    Centre of the table beats pocket or hand. A flat surface lets the microphone pick up all speakers evenly.
+  </Card>
+  <Card title="Background noise" icon="volume-xmark">
+    Cafés and open-plan offices add noise that reduces accuracy. If you can, step into a quieter space for important meetings.
+  </Card>
+  <Card title="Speaker introductions" icon="users">
+    A brief name introduction at the start of the meeting dramatically improves automatic speaker labelling.
+  </Card>
+  <Card title="Highlights over notes" icon="star">
+    Resist the urge to type notes during the meeting. Tap the highlight star instead — you'll get better output and stay more present.
+  </Card>
+</CardGroup>

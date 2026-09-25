@@ -1,0 +1,185 @@
+---
+title: "BRIEF FAQ: Recording, Outputs, Privacy & Billing Answers"
+sidebarTitle: "FAQ"
+description: "Answers to the most common questions about BRIEF — recording, outputs, privacy, Arabic language support, plans, and billing explained."
+---
+
+BRIEF is designed to get out of your way and let you focus on the conversation. Most questions have quick answers — find yours below.
+
+## About BRIEF
+
+<AccordionGroup>
+  <Accordion title="What is BRIEF and who is it for?">
+    BRIEF is an AI Conversation Intelligence & Memory platform built for Arabic-speaking professionals. It records your in-person meetings and conversations, transcribes them with speaker-level detail, and turns them into structured outputs — summaries, action items, decisions, and more — in both Arabic and English.
+
+    BRIEF is designed for anyone who holds conversations that matter: executives, consultants, doctors, lawyers, engineers, students, and teams across Egypt and the Gulf.
+  </Accordion>
+
+  <Accordion title="What languages does BRIEF support?">
+    BRIEF supports Arabic and English, including natural code-switching between the two — the way most professionals in Egypt and the Gulf actually speak. Speech recognition is optimized for Egyptian Arabic and Gulf Arabic dialects, and Modern Standard Arabic (MSA) is also well-supported.
+
+    Levantine dialects (Lebanese, Syrian, Jordanian, Palestinian) have good support. Maghrebi dialects (Moroccan, Algerian, Tunisian) have lower accuracy in the current version — if you record in a Maghrebi dialect, Mode C (cloud processing) will give you the best available results.
+  </Accordion>
+
+  <Accordion title="Does BRIEF work without internet?">
+    Yes — with Mode A (on-device processing), BRIEF records and processes your conversation entirely on your phone without an internet connection. Mode A is ideal for sensitive conversations or situations with unreliable connectivity.
+
+    Mode B (hybrid) and Mode C (cloud) require an internet connection for processing. All three modes let you start recording without internet; Modes B and C will queue processing until a connection is available.
+  </Accordion>
+
+  <Accordion title="Is BRIEF available on iOS and Android?">
+    Yes. BRIEF is available on both iOS and Android. Download it from the App Store or Google Play. Some processing features depend on your device's capabilities — flagship Android phones and recent iPhones deliver the fastest on-device processing times.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Recording
+
+<AccordionGroup>
+  <Accordion title="How do I start a recording?">
+    Open BRIEF and tap the **Record** button. BRIEF never starts recording automatically — every recording requires a deliberate tap from you. A recording indicator will appear to confirm the microphone is active.
+
+    To stop recording, tap the **Stop** button. BRIEF will then begin processing your conversation according to your selected processing mode.
+  </Accordion>
+
+  <Accordion title="How long can a recording be?">
+    There is no hard time limit on recording length. However, keep in mind that longer recordings take longer to process — especially on Mode A (on-device). For recordings over two hours, Mode C (cloud) will give you the fastest turnaround.
+
+    On Free plan, cloud processing hours are limited per month. Check your plan details in Settings to see your current usage.
+  </Accordion>
+
+  <Accordion title="What happens if I lose internet during a recording?">
+    BRIEF keeps recording regardless of your internet connection — your audio is always saved locally first. If you're on Mode B or Mode C, processing will be queued and will begin automatically once your connection is restored. You won't lose any audio.
+  </Accordion>
+
+  <Accordion title="My phone stopped recording when the screen turned off — what happened?">
+    This is almost always caused by Android battery optimization. Some Android manufacturers — including Xiaomi, Oppo, Vivo, Huawei, and Samsung — aggressively kill background apps to preserve battery life. When BRIEF is running in the background during a recording, the system may terminate it.
+
+    To fix this:
+
+    1. Go to **Settings → Battery → Battery Optimization** on your phone.
+    2. Find **BRIEF** in the app list and set it to **Don't optimize** or **Unrestricted**.
+    3. Also enable **Auto-launch** for BRIEF if your phone has that setting.
+
+    Steps vary by manufacturer and Android version. Search "disable battery optimization [your phone brand]" for model-specific instructions.
+
+    <Warning>
+      Until you disable battery optimization for BRIEF, keep your screen on or lock your phone only after confirming the recording indicator is still visible in your notification bar.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Can BRIEF record phone calls or video calls?">
+    No — BRIEF is designed for in-person conversations where your phone's microphone can capture the room. Recording phone calls or video calls is not supported in the current version.
+
+    For best results, use BRIEF in meetings, interviews, lectures, and face-to-face discussions where participants are physically present.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Outputs
+
+<AccordionGroup>
+  <Accordion title="How long does processing take?">
+    Processing time depends on your selected mode and device:
+
+    | Mode | Typical Time |
+    |------|-------------|
+    | Mode A (on-device) | 5–12 min per recorded hour on flagship phones; longer on mid-range Android |
+    | Mode B (hybrid) | Faster than Mode A; depends on connection speed |
+    | Mode C (cloud) | Fastest; usually a few minutes regardless of recording length |
+
+    On slower devices with long recordings, BRIEF may show **"Notes ready when you charge"** — processing will complete automatically when your phone is plugged in.
+  </Accordion>
+
+  <Accordion title="Why did BRIEF classify my conversation as Generic instead of Professional?">
+    BRIEF automatically classifies conversations as **Professional** or **Generic** based on the content it detects. Occasionally the classification is wrong — for example, a casual-sounding meeting may be classified as Generic.
+
+    To correct it: tap the **type chip** on the output screen, select the correct type, and tap **Regenerate**. Regeneration re-runs the extraction only — it does not re-transcribe your audio, so it completes quickly.
+  </Accordion>
+
+  <Accordion title="The speaker names are wrong — how do I fix them?">
+    Tap any speaker label in your output to rename it. BRIEF updates the name retroactively throughout the entire output — everywhere that speaker appears. You don't need to correct each instance individually.
+
+    BRIEF infers speaker names from conversational context using LLM analysis. It never requires you to provide voice samples. If two speakers have similar voices or spoke over each other frequently, some mix-ups may occur — renaming corrects the display but does not re-run diarization.
+  </Accordion>
+
+  <Accordion title="Can I edit the output?">
+    Yes. You can edit transcriptions, rename speakers, correct terminology, and adjust formatting directly in the output view. Edits to the transcript are reflected in generated summaries and action items.
+
+    If you change the conversation type, tap **Regenerate** to re-run extraction with the updated classification — no re-transcription needed.
+  </Accordion>
+
+  <Accordion title="Why are some sections missing from my output?">
+    BRIEF only generates sections that are supported by content in the conversation. A meeting with no decisions will have no Decisions section. A briefing with no follow-ups will have no Action Items section.
+
+    This is intentional — BRIEF avoids generating empty or fabricated sections. If you believe a section should be present but isn't, check that the correct conversation type is selected and regenerate.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Privacy & Security
+
+<AccordionGroup>
+  <Accordion title="Where does my audio go?">
+    It depends on your processing mode:
+
+    - **Mode A (on-device):** Your audio never leaves your phone. All transcription and extraction happens locally.
+    - **Mode B (hybrid):** Parts of processing happen on-device; some data is sent to BRIEF's secure cloud infrastructure.
+    - **Mode C (cloud):** Audio is sent to BRIEF's encrypted cloud servers for processing and then deleted after your outputs are generated.
+
+    BRIEF uses encrypted transmission and does not store raw audio longer than necessary for processing.
+  </Accordion>
+
+  <Accordion title="Does BRIEF train its AI on my conversations?">
+    No. BRIEF does not use your conversations to train or fine-tune its AI models. Your recordings and outputs are private to you.
+  </Accordion>
+
+  <Accordion title="How do I delete a conversation?">
+    Open the conversation, tap the menu (⋯), and select **Delete**. Deletion is permanent — BRIEF does not have a Recently Deleted folder or recovery option.
+
+    <Warning>
+      Deleting a conversation cannot be undone. Make sure you no longer need the recording or outputs before you delete.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Can someone else access my conversations?">
+    No. Your conversations are private to your account. BRIEF does not share your recordings or outputs with other users, and BRIEF staff cannot access your conversation content.
+
+    If you suspect unauthorized access to your account, change your password immediately and contact BRIEF support.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Plans & Billing
+
+<AccordionGroup>
+  <Accordion title="What's included in the Free plan?">
+    The Free plan includes a monthly allocation of cloud processing hours and full access to on-device processing (Mode A) with no limits. You get complete access to all output types — summaries, action items, speaker labels, and more — within your usage limits.
+
+    Check **Settings → Plan** for your current free tier limits and usage.
+  </Accordion>
+
+  <Accordion title="What happens when I hit my cloud hour limit?">
+    When you reach your monthly cloud processing limit, BRIEF will prompt you to upgrade or wait until your limit resets at the start of the next billing cycle. You can continue using Mode A (on-device) processing without restriction — it does not count against your cloud hours.
+  </Accordion>
+
+  <Accordion title="Is there a student discount?">
+    Yes. BRIEF offers a student discount for verified students. Go to **Settings → Plan → Student Discount** and follow the verification steps. You'll need a valid university email address or student ID to qualify.
+  </Accordion>
+
+  <Accordion title="Are prices different in Egypt vs the Gulf?">
+    Yes. BRIEF uses regional pricing to reflect local purchasing power. Prices shown in the app are in your local currency and reflect the rate for your region. You'll see the correct price for your country when you visit the upgrade screen.
+  </Accordion>
+
+  <Accordion title="Is there an Education plan for students?">
+    Yes. BRIEF's Education plan is designed for university students aged 18 and above and includes lecture recording, flashcards, quiz generation, learning gap detection, and an AI tutor grounded in your lecture recordings. The Education plan is semester-based rather than monthly.
+
+    <Note>
+      The Education plan is coming in V1 and is not yet available in the current release. Join the waitlist from **Settings → Plan** to be notified when it launches.
+    </Note>
+  </Accordion>
+</AccordionGroup>
